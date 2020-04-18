@@ -76,5 +76,5 @@ for x in rest_parking_unique:
         exist_parking.append(x) 
 
 test = rest_payment.join(rating.set_index('placeID'), on = 'placeID')
-
+'test'
 df.loc[(df['column_name'] >= A) & (df['column_name'] <= B)]
