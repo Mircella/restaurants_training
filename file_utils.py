@@ -5,7 +5,7 @@ import pickle
 def write_df_to_csv (data_dir, file_name, data_frame):
     if not os.path.exists(data_dir):
         os.makedirs(data_dir)
-    data_frame.to_csv(os.path.join(data_dir, file_name), header=False, index=False)
+    data_frame.to_csv(os.path.join(data_dir, file_name), header=True, index=False)
 
 
 def write_to_txt (data_dir, file_name, object_to_write):
