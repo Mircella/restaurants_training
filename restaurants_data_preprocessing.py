@@ -6,6 +6,7 @@ from prep_func import join_tables
 from prep_func import concatenate_tables
 from prep_func import drop_duplicated_rows_and_columns
 from prep_func import drop_nan
+from prep_func import find_unique_records_number_by_column
 from file_utils import write_df_to_csv
 
 # loading restaurants data
@@ -36,6 +37,18 @@ print(f"Number of restaurants that have description:{len(restaurant_geo_places['
 
 # Extracting how many restaurants published their working hours
 print(f"Number of restaurants with specified working hours:{len(restaurant_working_hours['placeID'].unique())}")
+
+# How many restaurants do we have across all restaurants data files
+all_restaurant_ids = find_unique_records_number_by_column(
+    'placeID',
+    restaurant_geo_places,
+    restaurant_cuisine_types,
+    restaurant_working_hours,
+    restaurant_parking,
+    restaurant_payment_types
+)
+
+print(f"All ids of restaurants: {len(all_restaurant_ids)}")
 
 # joining data of restaurants from all tables by their place id to exclude restaurants that do not have any data and will not have impact on the model
 joined_restaurant_data = join_tables(
@@ -90,7 +103,3 @@ print(f"Number of concatenated records after dropping duplicated columns and row
 
 # write concatenated restaurant data frame to csv file
 write_df_to_csv(data_dir="data", file_name="concatenated_restaurant_data.csv", data_frame=concatenated_restaurant_data)
-
-# Printing common statistical characteristics of given ratings
-print(restaurant_ratings.iloc[:,2:].describe())
-

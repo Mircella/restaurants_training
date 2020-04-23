@@ -36,3 +36,17 @@ def drop_duplicated_rows_and_columns(data_frame):
 def find_duplicated_rows(data_frame):
     duplicated_rows_df = data_frame[data_frame.duplicated()]
     return duplicated_rows_df
+
+
+def find_unique_records_number_by_column(column, *data_frames):
+    data_frames_columns = [df[column] for df in data_frames]
+    concatenated_column_values = np.concatenate(data_frames_columns)
+    return np.unique(concatenated_column_values)
+
+
+def extract_restaurants_with_ratings(source_data_frame, restaurants_with_ratings):
+    result = []
+    for index, restaurant in source_data_frame.iterrows():
+        if restaurant['placeID'] in restaurants_with_ratings:
+            result.append(restaurant)
+    return result

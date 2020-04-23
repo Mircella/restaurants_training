@@ -5,6 +5,7 @@ import numpy as np
 from prep_func import join_tables
 from prep_func import concatenate_tables
 from prep_func import drop_duplicated_rows_and_columns
+from prep_func import find_unique_records_number_by_column
 from prep_func import drop_nan
 from file_utils import write_df_to_csv
 
@@ -27,6 +28,16 @@ print(f"Number of unique users with given profile data:{len(user_profiles['userI
 
 # Extracting how many users evaluated restaurants
 print(f"Number of users who gave ratings to restaurants:{len(user_ratings['userID'].unique())}")
+
+# How many users do we have across all users data files
+all_users_ids = find_unique_records_number_by_column(
+    'userID',
+    user_payment_types,
+    user_cuisine_types,
+    user_profiles
+)
+
+print(f"All ids of users: {len(all_users_ids)}")
 
 # joining data of users from all tables by their user id to exclude users that do not have any data and will not have impact on the model
 joined_user_data = join_tables(
