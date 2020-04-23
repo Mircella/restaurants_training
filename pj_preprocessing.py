@@ -4,6 +4,7 @@ import numpy as np
 
 from prep_func import join_tables
 from prep_func import drop_nan
+from file_utils import write_df_to_csv
 
 #stats tables
 rating = pd.read_csv('data/rating_final.csv', delimiter = ';')
@@ -20,3 +21,6 @@ print(joined)
 
 #drop nan
 joined = drop_nan(joined)
+
+write_df_to_csv('data','joined_data.csv',joined)
+
