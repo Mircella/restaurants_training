@@ -15,3 +15,5 @@ n_132732 = pivot[pivot['placeID']==132732]
 x = n_132732['rating'].sum()
 
 correlation = piv.corr()
+
+dataset['city'].unique()
