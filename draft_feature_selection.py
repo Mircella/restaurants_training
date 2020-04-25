@@ -39,46 +39,22 @@ def select_features(X_train, y_train, X_test):
     X_test_fs = fs.transform(X_test)
     return X_train_fs, X_test_fs, fs
 
-
-restaurant_payment_types = pd.read_csv('clean_data/restaurant_payment_types.csv')
-restaurant_cuisine_types = pd.read_csv('clean_data/restaurant_cuisine_types.csv')
-restaurant_working_hours = pd.read_csv('clean_data/restaurant_working_hours.csv')
-restaurant_parking_types = pd.read_csv('clean_data/restaurant_parking_types.csv')
-restaurant_geo_places = pd.read_csv('clean_data/restaurant_geo_places.csv')
-restaurant_ratings = pd.read_csv('clean_data/restaurant_ratings.csv')
 joined_data = pd.read_csv('data/joined_data.csv')
-restaurant_geo_places = restaurant_geo_places.filter(
-    ['alcohol', 'smoking_area', 'dress_code', 'accessibility', 'price', 'area',
-     'other_services'],
-    axis=1
-)
-
-concatenated_restaurant_features = concatenate_tables(
-    # restaurant_cuisine_types,
-    restaurant_parking_types,
-    restaurant_payment_types,
-    restaurant_geo_places,
-    restaurant_ratings
-)
-
-# see how many records we have after concatenation
-print(f"Number of concatenated records without geo places & users:{len(concatenated_restaurant_features)}")
 
 # drop nan
-concatenated_restaurant_features = drop_nan(concatenated_restaurant_features)
+joined_data = drop_nan(joined_data)
 # see how many records we have after dropping NaN
-print(f"Number of concatenated records after dropping NaN values:{len(concatenated_restaurant_features)}")
+print(f"Number of concatenated records after dropping NaN values:{len(joined_data)}")
 
 # drop duplicated rows and columns
-concatenated_restaurant_features = drop_duplicated_rows_and_columns(concatenated_restaurant_features)
+joined_data = drop_duplicated_rows_and_columns(joined_data)
 
 # see how many records we have after dropping duplicated columns and rows
-print(f"Number of concatenated records after dropping duplicated columns and rows:"
-      f"{len(concatenated_restaurant_features)}")
+print(f"Number of records after dropping duplicated columns and rows:"
+      f"{len(joined_data)}")
 
 # set index of data frame as place id
-restaurants_ids = concatenated_restaurant_features['placeID']
-concatenated_restaurant_features.index = restaurants_ids
+
 
 # drop column userID and placeID as they do not impact on the rating
 # drop columns food_rating and service_rating to see how restaurant features impact only general rating
@@ -86,16 +62,11 @@ columns_to_drop = ["placeID", "userID", "food_rating",
                    "service_rating", "longitude","latitude",
                    'the_geom_meter','name','address',
                    'city','state','country','zip','franchise','hours','days']
-concatenated_restaurant_features_and_general_rating = joined_data
-concatenated_restaurant_features_and_general_rating.drop(columns_to_drop, axis=1, inplace=True)
-print(concatenated_restaurant_features_and_general_rating.columns)
-# # write concatenated restaurant data frame to csv file
-# write_df_to_csv(data_dir="clean_data", file_name="concatenated_restaurant_features_and_general_rating.csv",
-#                 data_frame=concatenated_restaurant_features_and_general_rating)
-
-# split into input features (X) and output (y) variables to be predicted
-input_features = concatenated_restaurant_features_and_general_rating.iloc[:, :-1].values
-general_rating = concatenated_restaurant_features_and_general_rating.iloc[:, -1].values
+joined_data_copy = joined_data
+joined_data_copy.drop(columns_to_drop, axis=1, inplace=True)
+print(joined_data_copy.columns)
+input_features = joined_data_copy.iloc[:, :-1].values
+general_rating = joined_data_copy.iloc[:, -1].values
 input_features = input_features.astype(str)
 
 # encoding input features
@@ -103,17 +74,6 @@ input_features = encode_input_features(input_features)
 # encoding target labels
 general_rating = encode_labels(general_rating)
 
-# storing result as data frame
-# input_features_df = pd.DataFrame(input_features, index=restaurants_ids)
-# general_rating_df = pd.DataFrame(general_rating, index=restaurants_ids)
-
-# # storing result data frame to file
-# write_df_to_csv(data_dir="clean_data", file_name="encoded_input_features.csv",
-#                 data_frame=input_features_df)
-# write_df_to_csv(data_dir="clean_data", file_name="encoded_labels.csv",
-#                 data_frame=general_rating_df)
-# print(input_features_df.head())
-# split into train and test sets
 input_features_train, input_features_test, general_rating_train, general_rating_test = train_test_split(input_features,
                                                                                                         general_rating,
                                                                                                         test_size=0.33,

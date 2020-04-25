@@ -52,3 +52,23 @@ df_res = pd.merge(left=df_res, right=restaurant_geo_places, how="left", on="plac
 
 write_df_to_csv(data_dir="relevant_features", file_name="df_res.csv", data_frame=df_res)
 
+dataset = pd.read_csv('data/concatenated_restaurant_data.csv')
+clean = dataset.drop(['the_geom_meter','name', 'address','city','state','country',
+                      'zip','Rambience','franchise','other_services','userID'], axis = 1)
+
+#irrelevant as only informal and casual
+clean = clean.drop('dress_code', axis = 1)
+
+cat_clean = clean.select_dtypes(include=['object']).copy() #independent X
+y = clean.iloc[:,-3].values #dependent rating
+
+cat_clean_obj = cat_clean.iloc[:,:].values
+
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+
+for i in range(0,10):
+    labelencoder_X = LabelEncoder()
+    cat_clean_obj[:, i] = labelencoder_X.fit_transform(cat_clean_obj[:, i])
+
+onehotencoder = OneHotEncoder(categorical_features = [0,1,2,3,4,5,6,7,8,9])
+test = onehotencoder.fit_transform(cat_clean_obj).toarray()
