@@ -50,3 +50,12 @@ def extract_restaurants_with_ratings(source_data_frame, restaurants_with_ratings
         if restaurant['placeID'] in restaurants_with_ratings:
             result.append(restaurant)
     return result
+
+def merge_and_group(left_df, right_df, merge_column, group_column, estimate_column):
+    merged_df = pd.merge(left=left_df, right=right_df, on=merge_column, how="left")
+    print(merged_df.shape)
+    print(merged_df.head())
+    grouped_df = merged_df.groupby(group_column)
+    # Calculate the mean ratings
+    print(grouped_df[estimate_column].mean())
+    print(grouped_df[estimate_column].describe())

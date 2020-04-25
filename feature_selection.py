@@ -17,6 +17,7 @@ from matplotlib import pyplot
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
+
 def encode_input_features(X):
     oe = OrdinalEncoder()
     oe.fit(X)
@@ -30,12 +31,14 @@ def encode_labels(y):
     y_train_enc = le.transform(y)
     return y_train_enc
 
+
 def select_features(X_train, y_train, X_test):
-	fs = SelectKBest(score_func=chi2, k='all')
-	fs.fit(X_train, y_train)
-	X_train_fs = fs.transform(X_train)
-	X_test_fs = fs.transform(X_test)
-	return X_train_fs, X_test_fs, fs
+    fs = SelectKBest(score_func=chi2, k='all')
+    fs.fit(X_train, y_train)
+    X_train_fs = fs.transform(X_train)
+    X_test_fs = fs.transform(X_test)
+    return X_train_fs, X_test_fs, fs
+
 
 restaurant_payment_types = pd.read_csv('clean_data/restaurant_payment_types.csv')
 restaurant_cuisine_types = pd.read_csv('clean_data/restaurant_cuisine_types.csv')
@@ -45,12 +48,13 @@ restaurant_geo_places = pd.read_csv('clean_data/restaurant_geo_places.csv')
 restaurant_ratings = pd.read_csv('clean_data/restaurant_ratings.csv')
 
 restaurant_geo_places = restaurant_geo_places.filter(
-    ['alcohol','smoking_area','dress_code','accessibility','price','Rambience','franchise','area','other_services'],
+    ['alcohol', 'smoking_area', 'dress_code', 'accessibility', 'price', 'area',
+     'other_services'],
     axis=1
 )
 
 concatenated_restaurant_features = concatenate_tables(
-    restaurant_cuisine_types,
+    # restaurant_cuisine_types,
     restaurant_parking_types,
     restaurant_payment_types,
     restaurant_geo_places,
@@ -107,16 +111,20 @@ write_df_to_csv(data_dir="clean_data", file_name="encoded_labels.csv",
                 data_frame=general_rating_df)
 print(input_features_df.head())
 # split into train and test sets
-input_features_train, input_features_test, general_rating_train, general_rating_test = train_test_split(input_features, general_rating, test_size=0.33, random_state=1)
+input_features_train, input_features_test, general_rating_train, general_rating_test = train_test_split(input_features,
+                                                                                                        general_rating,
+                                                                                                        test_size=0.33,
+                                                                                                        random_state=1)
 
 print('Train', input_features_train.shape, general_rating_train.shape)
 print('Test', input_features_test.shape, general_rating_test.shape)
 
 # categorical feature selection
-input_train_fs, input_test_fs, selected_features = select_features(input_features_train, general_rating_train, input_features_test)
+input_train_fs, input_test_fs, selected_features = select_features(input_features_train, general_rating_train,
+                                                                   input_features_test)
 # what are scores for the features
 for i in range(len(selected_features.scores_)):
-	print('Feature %d: %f' % (i, selected_features.scores_[i]))
+    print('Feature %d: %f' % (i, selected_features.scores_[i]))
 # plot the scores
 pyplot.bar([i for i in range(len(selected_features.scores_))], selected_features.scores_)
 pyplot.show()
@@ -127,5 +135,4 @@ model.fit(input_features_train, general_rating_train)
 general_rating_predictions = model.predict(input_features_test)
 # evaluate predictions
 accuracy = accuracy_score(general_rating_test, general_rating_predictions)
-print('Accuracy: %.2f' % (accuracy*100))
-
+print('Accuracy: %.2f' % (accuracy * 100))

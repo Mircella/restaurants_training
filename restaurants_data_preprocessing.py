@@ -45,10 +45,12 @@ print(f"Number of cuisine types:{len(restaurant_cuisine_types['Rcuisine'].unique
 
 # Extracting how many parking types exist in restaurants
 print(f"Number of unique restaurants with parking specified:{len(restaurant_parking['placeID'].unique())}")
+print(f"Parking types:{restaurant_parking['parking_lot'].unique()}")
 print(f"Number of parking types:{len(restaurant_parking['parking_lot'].unique())}")
 
 # Extracting how many restaurants was evaluated by users
-print(f"Number of restaurants evaluated by users:{len(restaurant_ratings['placeID'].unique())}")
+estimated_restaurant_ids = restaurant_ratings['placeID'].unique()
+print(f"Number of restaurants evaluated by users:{len(estimated_restaurant_ids)}")
 
 # Extracting how many restaurants have descriptions in geoplaces file
 print(f"Number of restaurants that have description:{len(restaurant_geo_places['placeID'].unique())}")

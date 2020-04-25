@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
+from prep_func import merge_and_group
 from prep_func import join_tables
 from prep_func import concatenate_tables
 from prep_func import drop_duplicated_rows_and_columns
@@ -33,14 +33,29 @@ df = pd.merge(left=df, right=restaurant_payment_types, how="left", on="placeID")
 df = pd.merge(left=df, right=restaurant_ratings, how="left", on="placeID")
 df = pd.merge(left=df, right=restaurant_features, how="left", on="placeID")
 
-df_parking_and_rating = pd.merge(left=restaurant_ratings, right=restaurant_parking_types, on="placeID", how="left")
-# Show the merged data
-print(df_parking_and_rating.head())
-# Group by the parking_lot column
-parking_group = df_parking_and_rating.groupby("parking_lot")
+# merge_and_group(
+#     left_df=restaurant_ratings,
+#     right_df=restaurant_parking_types,
+#     merge_column='placeID',
+#     group_column='parking_lot',
+#     estimate_column='service_rating'
+# )
 
-# Calculate the mean ratings
-print(parking_group['service_rating'].describe())
+merge_and_group(
+    left_df=restaurant_ratings,
+    right_df=restaurant_parking_types,
+    merge_column='placeID',
+    group_column='parking_lot',
+    estimate_column='rating'
+)
+
+# merge_and_group(
+#     left_df=restaurant_ratings,
+#     right_df=restaurant_payment_types,
+#     merge_column='placeID',
+#     group_column='Rpayment',
+#     estimate_column='service_rating'
+# )
 
 # # Group by the parking_lot column
 # cuisine_group = df.groupby("Rcuisine")
