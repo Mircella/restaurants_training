@@ -11,11 +11,29 @@ from file_utils import write_df_to_csv
 
 # loading restaurants data
 restaurant_payment_types = pd.read_csv('data/chefmozaccepts.csv', delimiter =';')
+write_df_to_csv('clean_data', 'restaurant_payment_types.csv', restaurant_payment_types)
+
 restaurant_cuisine_types = pd.read_csv('data/chefmozcuisine.csv', delimiter =';')
+write_df_to_csv('clean_data', 'restaurant_cuisine_types.csv', restaurant_cuisine_types)
+
 restaurant_working_hours = pd.read_csv('data/chefmozhours.csv', delimiter =',')
+
+for i, series in restaurant_working_hours.iterrows():
+    hours = restaurant_working_hours.loc[i, "hours"][0:len(restaurant_working_hours.loc[i, "hours"]) - 1]
+    restaurant_working_hours.loc[i, "hours"] = hours
+    hours = restaurant_working_hours.loc[i, "days"][0:len(restaurant_working_hours.loc[i, "days"]) - 1]
+    restaurant_working_hours.loc[i, "days"] = hours
+
+write_df_to_csv('clean_data', 'restaurant_working_hours.csv', restaurant_working_hours)
+
 restaurant_parking = pd.read_csv('data/chefmozparking.csv', delimiter =';')
+write_df_to_csv('clean_data', 'restaurant_parking_types.csv', restaurant_parking)
+
 restaurant_geo_places = pd.read_csv('data/geoplaces.csv', delimiter =';', encoding='latin-1')
+write_df_to_csv('clean_data', 'restaurant_geo_places.csv', restaurant_geo_places)
+
 restaurant_ratings = pd.read_csv('data/rating_final.csv', delimiter =';')
+write_df_to_csv('clean_data', 'restaurant_ratings.csv', restaurant_ratings)
 
 # Extracting how many payments types exist in restaurants
 print(f"Number of unique restaurants with payment type specified:{len(restaurant_payment_types['placeID'].unique())}")
@@ -92,8 +110,8 @@ print(f"Number of concatenated records:{len(concatenated_restaurant_data)}")
 
 # # drop nan
 # concatenated_restaurant_data = drop_nan(concatenated_restaurant_data)
-# # see how many records we have after dropping NaN
-# print(f"Number of concatenated records after dropping NaN values:{len(concatenated_restaurant_data)}")
+# see how many records we have after dropping NaN
+print(f"Number of concatenated records after dropping NaN values:{len(concatenated_restaurant_data)}")
 
 # drop duplicated rows and columns
 concatenated_restaurant_data = drop_duplicated_rows_and_columns(concatenated_restaurant_data)
