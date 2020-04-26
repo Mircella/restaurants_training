@@ -6,14 +6,9 @@ def drop_columns(df, *columns):
     df_dropped = df.drop([column for column in columns], axis = 1)
     return df_dropped
    
+def label_encoding(df,num_of_col):
+    for i in range(0,num_of_col): 
+        labelencoder_X = LabelEncoder()
+        df[:, i] = labelencoder_X.fit_transform(df[:, i])
+    return df
     
-    
-    
-    
-    
-concat = pd.read_csv('data\joined_data.csv')
-concat_dep = concat.drop(['placeID','the_geom_meter','name', 'address','city','state','country',
-                      'zip','latitude','longitude','franchise','hours',
-                      'days','userID'], axis = 1)
-    
-test  = drop_columns(concat, 'placeID','name')
