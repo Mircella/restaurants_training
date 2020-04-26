@@ -1,12 +1,11 @@
 import pandas as pd
 import numpy as np
-from restaurants_data_preprocessing import all_restaurant_ids
-from restaurants_data_preprocessing import restaurant_cuisine_types
-from users_data_preprocessing import all_users_ids
-from file_utils import write_df_to_csv
+from draft_jenya.restaurants_data_preprocessing import all_restaurant_ids
+from draft_jenya.users_data_preprocessing import all_users_ids
+from utils.utils_for_files_storing_and_reading import write_df_to_csv
 
 
-restaurant_ratings = pd.read_csv('data/rating_final.csv', delimiter =';')
+restaurant_ratings = pd.read_csv('../data/rating_final.csv', delimiter =';')
 
 # Printing common statistical characteristics of given ratings
 print(restaurant_ratings.iloc[:,2:].describe())
@@ -53,9 +52,9 @@ print(f"Matrix of food ratings:{food_ratings_matrix_df}")
 print(f"Matrix of service ratings:{service_ratings_matrix_df}")
 
 # write ratings matrices to csv
-write_df_to_csv(data_dir="ratings_matrices", file_name="general_ratings_matrix.csv", data_frame=general_ratings_matrix_df)
-write_df_to_csv(data_dir="ratings_matrices", file_name="food_ratings_matrix.csv", data_frame=food_ratings_matrix_df)
-write_df_to_csv(data_dir="ratings_matrices", file_name="service_ratings_matrix.csv", data_frame=service_ratings_matrix_df)
+write_df_to_csv(data_dir="../ratings_matrices", file_name="general_ratings_matrix.csv", data_frame=general_ratings_matrix_df)
+write_df_to_csv(data_dir="../ratings_matrices", file_name="food_ratings_matrix.csv", data_frame=food_ratings_matrix_df)
+write_df_to_csv(data_dir="../ratings_matrices", file_name="service_ratings_matrix.csv", data_frame=service_ratings_matrix_df)
 
 # I build a matrix to find which restaurant records across all restaurant data files have ratings
 # Initially I create the matrix filled with 0 which means that restaurant does not have rating
@@ -69,4 +68,4 @@ restaurants_with_ratings_estimation = pd.DataFrame(np.zeros(general_ratings_matr
 restaurants_with_ratings_estimation[general_ratings_matrix_df != -1] = 1
 print(f"Matrix of ratings between restaurants and users:{restaurants_with_ratings_estimation}")
 
-write_df_to_csv(data_dir="ratings_matrices", file_name="restaurants_with_ratings_estimation.csv", data_frame=restaurants_with_ratings_estimation)
+write_df_to_csv(data_dir="../ratings_matrices", file_name="restaurants_with_ratings_estimation.csv", data_frame=restaurants_with_ratings_estimation)

@@ -1,25 +1,14 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-from prep_func import merge_and_group
-from prep_func import join_tables
-from prep_func import concatenate_tables
-from prep_func import drop_duplicated_rows_and_columns
-from prep_func import drop_nan
-from prep_func import find_unique_records_number_by_column
-from file_utils import write_df_to_csv
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import OrdinalEncoder
-from restaurants_data_preprocessing import all_restaurant_ids
+from utils.data_frames_cleaning_functions import merge_and_group
+from draft_jenya.restaurants_data_preprocessing import all_restaurant_ids
 
 
-restaurant_payment_types = pd.read_csv('clean_data/restaurant_payment_types.csv')
-restaurant_cuisine_types = pd.read_csv('clean_data/restaurant_cuisine_types.csv')
-restaurant_working_hours = pd.read_csv('clean_data/restaurant_working_hours.csv')
-restaurant_parking_types = pd.read_csv('clean_data/restaurant_parking_types.csv')
-restaurant_ratings = pd.read_csv('clean_data/restaurant_ratings.csv')
-restaurant_geo_places = pd.read_csv('clean_data/restaurant_geo_places.csv')
+restaurant_payment_types = pd.read_csv('../clean_data/restaurant_payment_types.csv')
+restaurant_cuisine_types = pd.read_csv('../clean_data/restaurant_cuisine_types.csv')
+restaurant_working_hours = pd.read_csv('../clean_data/restaurant_working_hours.csv')
+restaurant_parking_types = pd.read_csv('../clean_data/restaurant_parking_types.csv')
+restaurant_ratings = pd.read_csv('../clean_data/restaurant_ratings.csv')
+restaurant_geo_places = pd.read_csv('../clean_data/restaurant_geo_places.csv')
 
 df = pd.DataFrame({'placeID': all_restaurant_ids})
 # These are the ones that I think might be relevant

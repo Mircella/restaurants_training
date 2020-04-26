@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
-dataset = pd.read_csv('data\joined_data.csv')
+dataset = pd.read_csv('../data/joined_data.csv')
 clean = dataset.drop(['the_geom_meter','name', 'address','city','state','country',
                       'zip','Rambience','franchise','other_services','userID'], axis = 1)
 

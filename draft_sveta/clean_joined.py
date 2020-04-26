@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score
 #clean = clean.drop('dress_code', axis = 1)
 #cat_clean = clean.select_dtypes(include=['object']).copy() #independent X
 
-concat = pd.read_csv('data\joined_data.csv')
+concat = pd.read_csv('../data/joined_data.csv')
 concat_dep = concat.drop(['placeID','the_geom_meter','name', 'address','city','state','country',
                       'zip','latitude','longitude','franchise','hours',
                       'days','userID'], axis = 1) #!if concat data, drop fax and url

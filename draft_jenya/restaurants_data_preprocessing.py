@@ -1,22 +1,20 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 
-from prep_func import join_tables
-from prep_func import concatenate_tables
-from prep_func import drop_duplicated_rows_and_columns
-from prep_func import drop_nan
-from prep_func import find_unique_records_number_by_column
-from file_utils import write_df_to_csv
+from utils.data_frames_cleaning_functions import join_tables
+from utils.data_frames_cleaning_functions import concatenate_tables
+from utils.data_frames_cleaning_functions import drop_duplicated_rows_and_columns
+from utils.data_frames_cleaning_functions import drop_nan
+from utils.data_frames_cleaning_functions import find_unique_records_number_by_column
+from utils.utils_for_files_storing_and_reading import write_df_to_csv
 
 # loading restaurants data
-restaurant_payment_types = pd.read_csv('data/chefmozaccepts.csv', delimiter =';')
-write_df_to_csv('clean_data', 'restaurant_payment_types.csv', restaurant_payment_types)
+restaurant_payment_types = pd.read_csv('../data/chefmozaccepts.csv', delimiter =';')
+write_df_to_csv('../clean_data', 'restaurant_payment_types.csv', restaurant_payment_types)
 
-restaurant_cuisine_types = pd.read_csv('data/chefmozcuisine.csv', delimiter =';')
-write_df_to_csv('clean_data', 'restaurant_cuisine_types.csv', restaurant_cuisine_types)
+restaurant_cuisine_types = pd.read_csv('../data/chefmozcuisine.csv', delimiter =';')
+write_df_to_csv('../clean_data', 'restaurant_cuisine_types.csv', restaurant_cuisine_types)
 
-restaurant_working_hours = pd.read_csv('data/chefmozhours.csv', delimiter =',')
+restaurant_working_hours = pd.read_csv('../data/chefmozhours.csv', delimiter =',')
 
 for i, series in restaurant_working_hours.iterrows():
     hours = restaurant_working_hours.loc[i, "hours"][0:len(restaurant_working_hours.loc[i, "hours"]) - 1]
@@ -24,16 +22,16 @@ for i, series in restaurant_working_hours.iterrows():
     hours = restaurant_working_hours.loc[i, "days"][0:len(restaurant_working_hours.loc[i, "days"]) - 1]
     restaurant_working_hours.loc[i, "days"] = hours
 
-write_df_to_csv('clean_data', 'restaurant_working_hours.csv', restaurant_working_hours)
+write_df_to_csv('../clean_data', 'restaurant_working_hours.csv', restaurant_working_hours)
 
-restaurant_parking = pd.read_csv('data/chefmozparking.csv', delimiter =';')
-write_df_to_csv('clean_data', 'restaurant_parking_types.csv', restaurant_parking)
+restaurant_parking = pd.read_csv('../data/chefmozparking.csv', delimiter =';')
+write_df_to_csv('../clean_data', 'restaurant_parking_types.csv', restaurant_parking)
 
-restaurant_geo_places = pd.read_csv('data/geoplaces.csv', delimiter =';', encoding='latin-1')
-write_df_to_csv('clean_data', 'restaurant_geo_places.csv', restaurant_geo_places)
+restaurant_geo_places = pd.read_csv('../data/geoplaces.csv', delimiter =';', encoding='latin-1')
+write_df_to_csv('../clean_data', 'restaurant_geo_places.csv', restaurant_geo_places)
 
-restaurant_ratings = pd.read_csv('data/rating_final.csv', delimiter =';')
-write_df_to_csv('clean_data', 'restaurant_ratings.csv', restaurant_ratings)
+restaurant_ratings = pd.read_csv('../data/rating_final.csv', delimiter =';')
+write_df_to_csv('../clean_data', 'restaurant_ratings.csv', restaurant_ratings)
 
 # Extracting how many payments types exist in restaurants
 print(f"Number of unique restaurants with payment type specified:{len(restaurant_payment_types['placeID'].unique())}")
@@ -95,7 +93,7 @@ joined_restaurant_data = drop_duplicated_rows_and_columns(joined_restaurant_data
 print(f"Number of joined records after dropping duplicated columns and rows:{len(joined_restaurant_data)}")
 
 # write joined restaurant data frame to csv file
-write_df_to_csv(data_dir="data", file_name="joined_restaurant_data.csv", data_frame=joined_restaurant_data)
+write_df_to_csv(data_dir="../data", file_name="joined_restaurant_data.csv", data_frame=joined_restaurant_data)
 
 # concatenating data of restaurants from all tables by their place id to exclude restaurants that do not have any data and will not have impact on the model
 concatenated_restaurant_data = concatenate_tables(
@@ -122,4 +120,4 @@ concatenated_restaurant_data = drop_duplicated_rows_and_columns(concatenated_res
 print(f"Number of concatenated records after dropping duplicated columns and rows:{len(concatenated_restaurant_data)}")
 
 # write concatenated restaurant data frame to csv file
-write_df_to_csv(data_dir="data", file_name="concatenated_restaurant_data.csv", data_frame=concatenated_restaurant_data)
+write_df_to_csv(data_dir="../data", file_name="concatenated_restaurant_data.csv", data_frame=concatenated_restaurant_data)
