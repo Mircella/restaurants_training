@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-dataset = pd.read_csv('joined_data.csv')
+dataset = pd.read_csv('data\joined_data.csv')
 #dataset = dataset.apply(lambda x: x.astype(str).str.lower())
 
 pivot = pd.DataFrame(dataset.iloc[:,[0,25,26,27]].values)
