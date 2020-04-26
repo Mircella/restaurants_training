@@ -1,0 +1,131 @@
+parking_lot,Rpayment,alcohol,smoking_area,dress_code,accessibility,price,area,other_services,rating
+public,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+none,VISA,No_Alcohol_Served,none,informal,completely,low,open,none,2
+none,MasterCard-Eurocard,Wine-Beer,only at bar,informal,partially,medium,open,none,2
+none,American_Express,No_Alcohol_Served,none,informal,completely,low,closed,none,1
+none,bank_debit_cards,No_Alcohol_Served,permitted,informal,completely,medium,closed,none,1
+none,cash,Wine-Beer,none,informal,no_accessibility,high,closed,none,0
+none,cash,No_Alcohol_Served,none,casual,completely,low,open,none,1
+yes,VISA,Wine-Beer,section,informal,no_accessibility,high,open,Internet,0
+valet parking,MasterCard-Eurocard,No_Alcohol_Served,not permitted,informal,completely,low,closed,none,1
+valet parking,American_Express,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+public,bank_debit_cards,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+none,cash,Wine-Beer,none,informal,no_accessibility,low,closed,none,1
+valet parking,VISA,Wine-Beer,section,informal,no_accessibility,high,closed,none,1
+valet parking,MasterCard-Eurocard,Wine-Beer,none,informal,no_accessibility,high,closed,none,0
+yes,cash,No_Alcohol_Served,not permitted,informal,no_accessibility,medium,closed,none,1
+public,cash,No_Alcohol_Served,not permitted,informal,no_accessibility,low,closed,none,1
+yes,VISA,Wine-Beer,none,informal,completely,medium,closed,none,0
+none,MasterCard-Eurocard,Full_Bar,section,informal,completely,low,closed,variety,1
+fee,cash,Wine-Beer,none,informal,completely,low,closed,none,2
+public,VISA,No_Alcohol_Served,none,informal,completely,low,closed,none,1
+yes,MasterCard-Eurocard,No_Alcohol_Served,section,informal,no_accessibility,medium,closed,none,1
+public,cash,Wine-Beer,none,casual,completely,high,closed,none,1
+yes,VISA,Full_Bar,section,informal,no_accessibility,high,closed,none,2
+public,MasterCard-Eurocard,No_Alcohol_Served,not permitted,informal,completely,low,closed,none,2
+yes,bank_debit_cards,No_Alcohol_Served,none,informal,no_accessibility,low,closed,none,2
+none,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+none,cash,No_Alcohol_Served,not permitted,casual,partially,medium,closed,none,2
+none,cash,No_Alcohol_Served,none,informal,completely,low,closed,none,1
+none,VISA,Wine-Beer,none,casual,no_accessibility,high,closed,none,2
+yes,MasterCard-Eurocard,No_Alcohol_Served,none,informal,no_accessibility,low,open,none,1
+yes,cash,No_Alcohol_Served,none,informal,no_accessibility,high,closed,none,1
+yes,VISA,Full_Bar,section,informal,completely,high,closed,variety,0
+yes,MasterCard-Eurocard,No_Alcohol_Served,section,informal,no_accessibility,high,closed,none,0
+public,bank_debit_cards,Wine-Beer,none,informal,no_accessibility,high,closed,none,0
+yes,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+none,VISA,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,Internet,0
+yes,MasterCard-Eurocard,Wine-Beer,section,informal,no_accessibility,medium,closed,none,0
+yes,bank_debit_cards,No_Alcohol_Served,none,informal,no_accessibility,high,closed,none,0
+yes,cash,Wine-Beer,section,casual,no_accessibility,high,closed,none,0
+yes,cash,No_Alcohol_Served,not permitted,informal,partially,medium,closed,none,0
+none,bank_debit_cards,Wine-Beer,none,informal,no_accessibility,medium,closed,none,0
+yes,cash,No_Alcohol_Served,permitted,informal,completely,low,open,none,0
+none,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,0
+yes,VISA,No_Alcohol_Served,none,informal,completely,low,closed,none,2
+none,MasterCard-Eurocard,No_Alcohol_Served,not permitted,informal,no_accessibility,medium,closed,none,2
+yes,cash,Wine-Beer,not permitted,informal,completely,medium,closed,none,2
+yes,cash,Wine-Beer,none,informal,completely,low,closed,variety,1
+none,VISA,Wine-Beer,section,informal,no_accessibility,medium,closed,none,0
+yes,MasterCard-Eurocard,Wine-Beer,none,informal,completely,medium,closed,none,1
+public,bank_debit_cards,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+yes,cash,No_Alcohol_Served,section,informal,no_accessibility,high,closed,none,2
+none,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+yes,VISA,Wine-Beer,section,informal,no_accessibility,high,closed,none,1
+yes,MasterCard-Eurocard,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+yes,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+none,cash,No_Alcohol_Served,section,informal,no_accessibility,high,closed,none,1
+none,VISA,No_Alcohol_Served,none,informal,completely,low,closed,none,2
+yes,MasterCard-Eurocard,Wine-Beer,section,informal,no_accessibility,high,closed,none,2
+none,cash,Full_Bar,permitted,informal,completely,medium,open,variety,2
+yes,cash,No_Alcohol_Served,none,informal,no_accessibility,high,closed,none,2
+yes,VISA,No_Alcohol_Served,section,informal,no_accessibility,medium,closed,none,0
+yes,MasterCard-Eurocard,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+yes,cash,Full_Bar,section,informal,completely,medium,closed,none,1
+none,VISA,No_Alcohol_Served,section,informal,no_accessibility,low,closed,none,2
+none,MasterCard-Eurocard,No_Alcohol_Served,not permitted,informal,no_accessibility,low,closed,none,2
+none,American_Express,Full_Bar,none,informal,no_accessibility,high,closed,none,1
+none,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+yes,American_Express,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+yes,cash,No_Alcohol_Served,none,informal,completely,low,closed,none,1
+none,VISA,Full_Bar,none,informal,no_accessibility,high,closed,none,2
+yes,MasterCard-Eurocard,No_Alcohol_Served,none,informal,completely,low,closed,none,1
+yes,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+yes,cash,Full_Bar,not permitted,informal,completely,medium,closed,variety,1
+none,VISA,No_Alcohol_Served,none,informal,completely,low,closed,none,1
+none,MasterCard-Eurocard,Wine-Beer,section,informal,no_accessibility,high,closed,none,1
+public,American_Express,No_Alcohol_Served,not permitted,casual,completely,low,closed,none,2
+yes,cash,No_Alcohol_Served,none,informal,completely,low,closed,none,2
+none,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+none,VISA,No_Alcohol_Served,section,informal,no_accessibility,high,closed,none,2
+none,MasterCard-Eurocard,Full_Bar,section,informal,no_accessibility,medium,closed,none,2
+none,cash,No_Alcohol_Served,not permitted,casual,no_accessibility,low,closed,none,2
+none,VISA,No_Alcohol_Served,permitted,casual,no_accessibility,low,open,none,2
+none,MasterCard-Eurocard,Wine-Beer,none,informal,no_accessibility,high,closed,none,2
+yes,cash,No_Alcohol_Served,not permitted,informal,partially,medium,closed,none,2
+none,VISA,No_Alcohol_Served,not permitted,informal,completely,medium,closed,none,2
+none,MasterCard-Eurocard,No_Alcohol_Served,none,informal,completely,low,closed,none,2
+public,American_Express,No_Alcohol_Served,permitted,informal,completely,low,open,none,2
+yes,cash,No_Alcohol_Served,none,informal,completely,low,closed,none,1
+none,VISA,Wine-Beer,permitted,informal,no_accessibility,low,open,none,2
+yes,MasterCard-Eurocard,No_Alcohol_Served,not permitted,informal,no_accessibility,medium,closed,none,0
+none,American_Express,No_Alcohol_Served,not permitted,informal,partially,medium,closed,none,1
+none,cash,Wine-Beer,none,informal,no_accessibility,medium,closed,none,0
+none,cash,No_Alcohol_Served,not permitted,informal,completely,low,closed,none,0
+none,cash,No_Alcohol_Served,none,informal,completely,low,closed,none,0
+none,VISA,No_Alcohol_Served,not permitted,informal,completely,medium,closed,none,0
+none,MasterCard-Eurocard,No_Alcohol_Served,permitted,formal,completely,medium,closed,none,1
+none,cash,No_Alcohol_Served,none,informal,no_accessibility,low,open,none,1
+none,VISA,Wine-Beer,none,informal,no_accessibility,medium,closed,none,2
+none,MasterCard-Eurocard,Wine-Beer,permitted,casual,partially,medium,open,variety,2
+yes,cash,No_Alcohol_Served,section,informal,no_accessibility,low,closed,none,2
+none,VISA,Wine-Beer,only at bar,informal,no_accessibility,medium,closed,Internet,2
+yes,MasterCard-Eurocard,No_Alcohol_Served,none,informal,partially,medium,closed,variety,1
+none,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,2
+none,VISA,No_Alcohol_Served,none,informal,completely,low,closed,none,2
+yes,MasterCard-Eurocard,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,0
+none,American_Express,Wine-Beer,section,informal,no_accessibility,high,closed,none,1
+yes,cash,No_Alcohol_Served,permitted,informal,no_accessibility,low,open,none,2
+none,VISA,No_Alcohol_Served,none,informal,no_accessibility,low,closed,none,2
+none,MasterCard-Eurocard,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+yes,cash,No_Alcohol_Served,none,informal,completely,low,closed,none,2
+none,cash,Wine-Beer,section,casual,completely,low,open,none,2
+yes,cash,No_Alcohol_Served,not permitted,informal,completely,low,open,none,2
+none,VISA,Wine-Beer,none,formal,no_accessibility,high,closed,none,2
+none,MasterCard-Eurocard,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+none,American_Express,Wine-Beer,none,informal,no_accessibility,medium,closed,none,2
+yes,cash,No_Alcohol_Served,not permitted,informal,no_accessibility,low,closed,none,1
+yes,cash,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,0
+yes,cash,No_Alcohol_Served,none,informal,partially,medium,closed,none,2
+yes,VISA,No_Alcohol_Served,not permitted,informal,completely,medium,closed,none,2
+valet parking,MasterCard-Eurocard,Wine-Beer,section,informal,no_accessibility,medium,closed,none,1
+none,cash,Wine-Beer,none,informal,no_accessibility,medium,closed,none,1
+yes,VISA,No_Alcohol_Served,not permitted,informal,no_accessibility,medium,closed,none,1
+yes,MasterCard-Eurocard,No_Alcohol_Served,none,informal,completely,low,closed,none,0
+yes,American_Express,No_Alcohol_Served,none,informal,completely,medium,closed,none,1
+yes,cash,No_Alcohol_Served,not permitted,informal,partially,low,closed,none,2
+none,cash,No_Alcohol_Served,not permitted,informal,completely,medium,closed,none,0
+none,VISA,No_Alcohol_Served,none,informal,no_accessibility,medium,closed,none,1
+none,MasterCard-Eurocard,Wine-Beer,not permitted,informal,no_accessibility,medium,closed,Internet,0
+none,American_Express,No_Alcohol_Served,none,informal,completely,low,closed,none,0
+yes,cash,No_Alcohol_Served,none,informal,completely,low,closed,none,2
