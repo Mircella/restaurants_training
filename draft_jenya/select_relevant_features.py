@@ -5,11 +5,11 @@ from utils.data_frames_cleaning_functions import extract_restaurants_with_rating
 from utils.data_frames_cleaning_functions import add_missing_restaurants_with_ratings
 from draft_jenya.relevant_features_analysis import encode_data_frame
 
-restaurant_payment_types = pd.read_csv('../clean_data/restaurant_payment_types.csv')
-restaurant_cuisine_types = pd.read_csv('../clean_data/restaurant_cuisine_types.csv')
-restaurant_working_hours = pd.read_csv('../clean_data/restaurant_working_hours.csv')
-restaurant_parking_types = pd.read_csv('../clean_data/restaurant_parking_types.csv')
-restaurant_geo_places = pd.read_csv('../clean_data/restaurant_geo_places.csv')
+restaurant_payment_types = pd.read_csv('../draft_sveta/no_similiar_categories/restaurant_payment.csv')
+restaurant_cuisine_types = pd.read_csv('../draft_sveta/no_similiar_categories/restaurant_cuisine.csv')
+restaurant_working_hours = pd.read_csv('../draft_sveta/no_similiar_categories/restaurant_hours.csv')
+restaurant_parking_types = pd.read_csv('../draft_sveta/no_similiar_categories/restaurant_parking.csv')
+restaurant_geo_places = pd.read_csv('../draft_sveta/no_similiar_categories/restaurant_general.csv')
 restaurant_ratings = pd.read_csv('../clean_data/restaurant_ratings.csv')
 restaurant_geo_places = restaurant_geo_places.filter(
     ['placeID',
@@ -32,7 +32,8 @@ restaurant_payment_types_and_ratings_encoded_without_index = extract_restaurants
 restaurant_payment_types_and_ratings_encoded_without_index.rename(columns={'index':'placeID'}, inplace=True)
 write_df_to_csv('clean_data_encoded', 'restaurant_payment_types_and_ratings_encoded.csv', restaurant_payment_types_and_ratings_encoded_without_index)
 
-general_rating_restaurant_place_ids = restaurant_ratings.groupby('placeID')['rating'].mean().reset_index()
+# general_rating_restaurant_place_ids = restaurant_ratings.groupby('placeID')['rating'].mean().reset_index()
+general_rating_restaurant_place_ids = restaurant_ratings['placeID']
 buffer = pd.merge(left=general_rating_restaurant_place_ids, right=restaurant_payment_types_and_ratings_encoded_without_index, on='placeID', how="left")
 
 restaurant_cuisine_types_encoded = encode_data_frame(restaurant_cuisine_types)
