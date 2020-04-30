@@ -1,16 +1,20 @@
 import pandas as pd
 import numpy as np
 
+from utils.utils_for_files_storing_and_reading import write_df_to_csv
+
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 def encode_data_frame(data_frame):
+
+    placeIds = data_frame['placeID'].values
     # Selecting categorical features (I intend they are not of numerical type, thus I am choosing only of type object)
     data_frame = data_frame.select_dtypes(include=['object'])
 
     # Preparing column names for future encoded data frame which will be names of all values of categorical features
     column_names = []
     for column_name in data_frame.columns:
-        column_names.append(data_frame[column_name].unique())
+        column_names.append(sorted(data_frame[column_name].unique()))
     column_names = [item for sublist in column_names for item in sublist]
 
     # Mapping data frame to array to be able to use LabelEncoder and OneHotEncoder
@@ -27,7 +31,7 @@ def encode_data_frame(data_frame):
     result_encoded_array = one_hot_encoder.fit_transform(data_frame_array).toarray()
 
     # Here I create encoded matrix back to data frame which is indexed by restaurant place id and has prepared above column_names
-    result_encoded_data_frame = pd.DataFrame(result_encoded_array, columns=column_names, index=np.array(dataset['placeID']))
+    result_encoded_data_frame = pd.DataFrame(result_encoded_array, columns=column_names, index=placeIds)
     return result_encoded_data_frame
 
 
@@ -76,7 +80,7 @@ def encode_data_frame(data_frame):
 #
 # write_df_to_csv(data_dir="relevant_features", file_name="df_res.csv", data_frame=df_res)
 
-dataset = pd.read_csv('../data/concatenated_restaurant_data.csv')
+dataset = pd.read_csv('data/concatenated_restaurant_data.csv')
 clean_data_set = dataset.drop(['the_geom_meter', 'name', 'address', 'city',
                       'state','country','fax','url','zip',
                       'Rambience','franchise','other_services',
@@ -84,4 +88,5 @@ clean_data_set = dataset.drop(['the_geom_meter', 'name', 'address', 'city',
 
 
 result_df = encode_data_frame(clean_data_set)
+write_df_to_csv('data', 'encoded_restaurants_with_ratings_data_all.csv',result_df)
 print(result_df.head())
