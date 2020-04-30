@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+from utils.utils_for_files_storing_and_reading import write_df_to_csv
+
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 def encode_data_frame(data_frame):
@@ -84,4 +86,5 @@ clean_data_set = dataset.drop(['the_geom_meter', 'name', 'address', 'city',
 
 
 result_df = encode_data_frame(clean_data_set)
+write_df_to_csv('data', 'encoded_restaurants_with_ratings_data_all.csv',result_df)
 print(result_df.head())
