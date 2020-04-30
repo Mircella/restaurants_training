@@ -6,6 +6,8 @@ from utils.utils_for_files_storing_and_reading import write_df_to_csv
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 def encode_data_frame(data_frame):
+
+    placeIds = data_frame['placeID'].values
     # Selecting categorical features (I intend they are not of numerical type, thus I am choosing only of type object)
     data_frame = data_frame.select_dtypes(include=['object'])
 
@@ -29,7 +31,7 @@ def encode_data_frame(data_frame):
     result_encoded_array = one_hot_encoder.fit_transform(data_frame_array).toarray()
 
     # Here I create encoded matrix back to data frame which is indexed by restaurant place id and has prepared above column_names
-    result_encoded_data_frame = pd.DataFrame(result_encoded_array, columns=column_names, index=np.array(dataset['placeID']))
+    result_encoded_data_frame = pd.DataFrame(result_encoded_array, columns=column_names, index=placeIds)
     return result_encoded_data_frame
 
 
