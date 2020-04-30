@@ -32,8 +32,8 @@ restaurant_payment_types_and_ratings_encoded_without_index = extract_restaurants
 restaurant_payment_types_and_ratings_encoded_without_index.rename(columns={'index':'placeID'}, inplace=True)
 write_df_to_csv('clean_data_encoded', 'restaurant_payment_types_and_ratings_encoded.csv', restaurant_payment_types_and_ratings_encoded_without_index)
 
-# general_rating_restaurant_place_ids = restaurant_ratings.groupby('placeID')['rating'].mean().reset_index()
-general_rating_restaurant_place_ids = restaurant_ratings['placeID']
+general_rating_restaurant_place_ids = restaurant_ratings.groupby('placeID')['service_rating'].mean().reset_index()
+# general_rating_restaurant_place_ids = restaurant_ratings[['placeID','rating']]
 buffer = pd.merge(left=general_rating_restaurant_place_ids, right=restaurant_payment_types_and_ratings_encoded_without_index, on='placeID', how="left")
 
 restaurant_cuisine_types_encoded = encode_data_frame(restaurant_cuisine_types)

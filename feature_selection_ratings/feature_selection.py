@@ -63,8 +63,8 @@ def calculate_selected_features_prediction_accuracy_with_logistic_regression(X_t
     # evaluate the model
     y_predictions = logistic_regression_classifier.predict(X_test)
     # evaluate predictions
-
-    return y_predictions
+    accuracy = accuracy_score(y_test, y_predictions)
+    return accuracy
 
 
 def calculate_selected_features_prediction_accuracy_with_random_forest_classifier(X_train, y_train, X_test, y_test):
