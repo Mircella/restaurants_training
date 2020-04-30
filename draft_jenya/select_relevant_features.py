@@ -1,9 +1,9 @@
 import pandas as pd
 from utils.utils_for_files_storing_and_reading import write_df_to_csv
-from utils.data_frames_cleaning_functions import concatenate_tables
-from utils.data_frames_cleaning_functions import extract_restaurants_with_ratings
-from utils.data_frames_cleaning_functions import add_missing_restaurants_with_ratings
-from draft_jenya.relevant_features_analysis import encode_data_frame
+from utils.data_frames_cleaning_functions import encode_data_frame_and_group_by_index
+from utils.data_frames_cleaning_functions import inner_join_data_frames_by_column
+from utils.data_frames_cleaning_functions import move_index_to_column
+
 
 restaurant_payment_types = pd.read_csv('../clean_data/restaurant_payment_types.csv')
 restaurant_cuisine_types = pd.read_csv('../clean_data/restaurant_cuisine_types.csv')
@@ -14,7 +14,6 @@ restaurant_ratings = pd.read_csv('../clean_data/restaurant_ratings.csv')
 restaurant_geo_places = restaurant_geo_places.filter(
     ['placeID',
      'alcohol',
-     # 'smoking_area',
      'dress_code',
      'accessibility',
      'price',
@@ -25,40 +24,54 @@ restaurant_geo_places = restaurant_geo_places.filter(
      ],
     axis=1
 )
-
-restaurant_payment_types_encoded = encode_data_frame(restaurant_payment_types)
-restaurant_payment_types_encoded = restaurant_payment_types_encoded.groupby(restaurant_payment_types_encoded.index).sum()
-restaurant_payment_types_and_ratings_encoded_without_index = extract_restaurants_with_ratings(restaurant_payment_types_encoded, restaurant_ratings).reset_index()
-restaurant_payment_types_and_ratings_encoded_without_index.rename(columns={'index':'placeID'}, inplace=True)
-write_df_to_csv('clean_data_encoded', 'restaurant_payment_types_and_ratings_encoded.csv', restaurant_payment_types_and_ratings_encoded_without_index)
-
 general_rating_restaurant_place_ids = restaurant_ratings.groupby('placeID')['rating'].mean().reset_index()
-buffer = pd.merge(left=general_rating_restaurant_place_ids, right=restaurant_payment_types_and_ratings_encoded_without_index, on='placeID', how="left")
 
-restaurant_cuisine_types_encoded = encode_data_frame(restaurant_cuisine_types)
-restaurant_cuisine_types_encoded = restaurant_cuisine_types_encoded.groupby(restaurant_cuisine_types_encoded.index).sum()
-restaurant_cuisine_types_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_cuisine_types_encoded, restaurant_ratings).reset_index()
-restaurant_cuisine_types_and_ratings_encoded.rename(columns={'index':'placeID'}, inplace=True)
-write_df_to_csv('clean_data_encoded', 'restaurant_cuisine_types_and_ratings_encoded.csv', restaurant_cuisine_types_and_ratings_encoded)
+# I encode all categorical features by putting categories as column names and
+# adding to each column name prefix which is type of category to easy recognize which category this column name belongs
+# to, for ex: Rpayment_Visa
+restaurant_payments = encode_data_frame_and_group_by_index(restaurant_payment_types)
 
-buffer = pd.merge(left=buffer, right=restaurant_cuisine_types_and_ratings_encoded, on='placeID', how="left")
+# I found intersection of encoded payment data with restaurants which have ratings by place id
+restaurant_payments = inner_join_data_frames_by_column(restaurant_payments, restaurant_ratings, 'placeID')
 
-restaurant_parking_types_encoded = encode_data_frame(restaurant_parking_types)
-restaurant_parking_types_encoded = restaurant_parking_types_encoded.groupby(restaurant_parking_types_encoded.index).sum()
-restaurant_parking_types_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_parking_types_encoded, restaurant_ratings).reset_index()
-restaurant_parking_types_and_ratings_encoded.rename(columns={'index':'placeID'}, inplace=True)
-write_df_to_csv('clean_data_encoded', 'restaurant_parking_types_and_ratings_encoded.csv', restaurant_parking_types_and_ratings_encoded)
+# I moved index to column to display it in csv file (for more convenient navigation)
+# and also to be able to do merge between tables by this columns
+restaurant_payments = move_index_to_column(restaurant_payments, 'placeID', True)
 
-buffer = pd.merge(left=buffer, right=restaurant_parking_types_and_ratings_encoded, on='placeID', how="left")
+# I saved this encoded data to csv file for future analysis
+write_df_to_csv('clean_data_encoded', 'restaurant_payment_types_and_ratings_encoded.csv', restaurant_payments)
 
-restaurant_geo_places_encoded = encode_data_frame(restaurant_geo_places)
-restaurant_geo_places_encoded = restaurant_geo_places_encoded.groupby(restaurant_geo_places_encoded.index).sum()
-restaurant_geo_places_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_geo_places_encoded, restaurant_ratings).reset_index()
-restaurant_geo_places_and_ratings_encoded.rename(columns={'index':'placeID'}, inplace=True)
-write_df_to_csv('clean_data_encoded', 'restaurant_geo_places_and_ratings_encoded.csv', restaurant_geo_places_and_ratings_encoded)
+# I made left join of restaurant ratings with restaurant_payments_encoded so that I always have 130 restaurants with ratings
+# and some of them can probably miss pinformation about payments
+# but it is also probable that after following merging with other data frames they will have information in other categories
+# that can potentially impact the rating
+restaurants = pd.merge(left=general_rating_restaurant_place_ids, right=restaurant_payments, on='placeID', how="left")
 
-buffer = pd.merge(left=buffer, right=restaurant_geo_places_and_ratings_encoded, on='placeID', how="left")
+# I have done the same encoding and merging with restaurants ratings for restaurant_parking_types
+restaurant_parkings = encode_data_frame_and_group_by_index(restaurant_parking_types)
+restaurant_parkings = inner_join_data_frames_by_column(restaurant_parkings, restaurant_ratings, 'placeID').reset_index()
+restaurant_parkings = move_index_to_column(restaurant_parkings, 'placeID')
+write_df_to_csv('clean_data_encoded', 'restaurant_parking_types_and_ratings_encoded.csv', restaurant_parkings)
 
-buffer = buffer.fillna(0)
-write_df_to_csv('clean_data_encoded', 'all_restaurant_data_encoded.csv', buffer)
-print(buffer.shape)
+restaurants = pd.merge(left=restaurants, right=restaurant_parkings, on='placeID', how="left")
+
+# I have done the same encoding and merging with restaurants ratings for restaurant_cuisine_types
+restaurant_cuisines = encode_data_frame_and_group_by_index(restaurant_cuisine_types)
+restaurant_cuisines = inner_join_data_frames_by_column(restaurant_cuisines, restaurant_ratings, 'placeID').reset_index()
+restaurant_cuisines = move_index_to_column(restaurant_cuisines, 'placeID')
+write_df_to_csv('clean_data_encoded', 'restaurant_cuisine_types_and_ratings_encoded.csv', restaurant_cuisines)
+
+restaurants = pd.merge(left=restaurants, right=restaurant_cuisines, on='placeID', how="left")
+
+# I have done the same encoding and merging with restaurants ratings for restaurant_geo_places
+restaurant_geoplaces = encode_data_frame_and_group_by_index(restaurant_geo_places)
+restaurant_geoplaces = inner_join_data_frames_by_column(restaurant_geoplaces, restaurant_ratings, 'placeID').reset_index()
+restaurant_geoplaces = move_index_to_column(restaurant_geoplaces, 'placeID')
+write_df_to_csv('clean_data_encoded', 'restaurant_geo_places_and_ratings_encoded.csv', restaurant_geoplaces)
+
+restaurants = pd.merge(left=restaurants, right=restaurant_geoplaces, on='placeID', how="left")
+
+# Here I replaced NaN values in result data frame with zero so it means that restaurant is missing information in this type of category
+restaurants = restaurants.fillna(0)
+write_df_to_csv('clean_data_encoded', 'all_restaurant_data_encoded.csv', restaurants)
+print(restaurants.shape)
