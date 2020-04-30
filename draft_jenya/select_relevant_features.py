@@ -45,11 +45,11 @@ restaurant_geo_places_encoded = restaurant_geo_places_encoded.groupby(restaurant
 restaurant_geo_places_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_geo_places_encoded, restaurant_ratings)
 write_df_to_csv('clean_data_encoded', 'restaurant_geo_places_and_ratings_encoded.csv', restaurant_geo_places_and_ratings_encoded)
 
-payments_and_cuisines = concatenate_tables(
+all_restaurant_data_encoded = concatenate_tables(
     restaurant_payment_types_and_ratings_encoded,
     restaurant_cuisine_types_and_ratings_encoded,
     restaurant_parking_types_and_ratings_encoded,
     restaurant_geo_places_and_ratings_encoded
 )
-write_df_to_csv(payments_and_cuisines)
-print(payments_and_cuisines.shape)
+write_df_to_csv('clean_data_encoded', 'all_restaurant_data_encoded.csv', all_restaurant_data_encoded)
+print(all_restaurant_data_encoded.shape)
