@@ -47,9 +47,9 @@ def find_unique_records_number_by_column(column, *data_frames):
 def extract_restaurants_with_ratings(source_data_frame, restaurants_with_ratings):
     result = []
     for index, restaurant in source_data_frame.iterrows():
-        if restaurant['placeID'] in restaurants_with_ratings:
+        if index in restaurants_with_ratings['placeID'].values:
             result.append(restaurant)
-    return result
+    return pd.DataFrame(result)
 
 def merge_and_group(left_df, right_df, merge_column, group_column, estimate_column):
     merged_df = pd.merge(left=left_df, right=right_df, on=merge_column, how="left")

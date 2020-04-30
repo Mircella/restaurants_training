@@ -1,8 +1,7 @@
 import pandas as pd
-import numpy as np
 from utils.utils_for_files_storing_and_reading import write_df_to_csv
-from utils.data_frames_cleaning_functions import join_tables
-from utils.data_frames_cleaning_functions import find_unique_records_number_by_column
+from utils.data_frames_cleaning_functions import concatenate_tables
+from utils.data_frames_cleaning_functions import extract_restaurants_with_ratings
 from draft_jenya.relevant_features_analysis import encode_data_frame
 
 restaurant_payment_types = pd.read_csv('../clean_data/restaurant_payment_types.csv')
@@ -10,40 +9,47 @@ restaurant_cuisine_types = pd.read_csv('../clean_data/restaurant_cuisine_types.c
 restaurant_working_hours = pd.read_csv('../clean_data/restaurant_working_hours.csv')
 restaurant_parking_types = pd.read_csv('../clean_data/restaurant_parking_types.csv')
 restaurant_geo_places = pd.read_csv('../clean_data/restaurant_geo_places.csv')
+restaurant_ratings = pd.read_csv('../clean_data/restaurant_ratings.csv')
 restaurant_geo_places = restaurant_geo_places.filter(
     ['placeID',
      'alcohol',
-     'smoking_area',
+     # 'smoking_area',
      'dress_code',
      'accessibility',
      'price',
      'Rambience',
      'franchise',
      'area',
-     'other_services'],
+     'other_services'
+     ],
     axis=1
 )
 
-joined_by_place_id = join_tables('placeID', restaurant_cuisine_types, restaurant_payment_types, restaurant_parking_types, restaurant_geo_places)
-joined_by_place_id_encoded = encode_data_frame(restaurant_payment_types)
-joined_by_place_id_encoded = joined_by_place_id_encoded.groupby(joined_by_place_id_encoded.index).sum()
-# How many restaurants do we have across all restaurants data files
-# all_restaurant_ids = find_unique_records_number_by_column(
-#     'placeID',
-#     restaurant_geo_places,
-#     restaurant_cuisine_types,
-#     restaurant_working_hours,
-#     restaurant_parking_types,
-#     restaurant_payment_types
-# )
-#
-# place_ids_and_parking_types_merged = pd.DataFrame({'placeID': all_restaurant_ids})
-# place_ids_and_parking_types_merged = pd.merge(left=place_ids_and_parking_types_merged, right=restaurant_parking_types, how="left", on="placeID")
-# place_ids_and_parking_types_merged = pd.merge(left=place_ids_and_parking_types_merged, right=restaurant_payment_types, how="left", on="placeID")
-# place_ids_and_parking_types_merged = pd.merge(left=place_ids_and_parking_types_merged, right=restaurant_working_hours, how="left", on="placeID")
-# place_ids_and_parking_types_merged = pd.merge(left=place_ids_and_parking_types_merged, right=restaurant_cuisine_types, how="left", on="placeID")
-# place_ids_and_parking_types_merged = pd.merge(left=place_ids_and_parking_types_merged, right=restaurant_geo_places, how="left", on="placeID")
-# place_ids_and_parking_types_merged = pd.merge(left=place_ids_and_parking_types_merged, right=restaurant_ratings, how='left', on="placeID")
+restaurant_payment_types_encoded = encode_data_frame(restaurant_payment_types)
+restaurant_payment_types_encoded = restaurant_payment_types_encoded.groupby(restaurant_payment_types_encoded.index).sum()
+restaurant_payment_types_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_payment_types_encoded, restaurant_ratings)
+write_df_to_csv('clean_data_encoded', 'restaurant_payment_types_and_ratings_encoded.csv', restaurant_payment_types_and_ratings_encoded.reset_index())
 
-# write_df_to_csv(data_dir="../data", file_name="place_ids_and_parking_types_merged.csv", data_frame=place_ids_and_parking_types_merged)
-# write_df_to_csv(data_dir="../data", file_name="joined_by_place_id.csv", data_frame=joined_by_place_id)
+restaurant_cuisine_types_encoded = encode_data_frame(restaurant_cuisine_types)
+restaurant_cuisine_types_encoded = restaurant_cuisine_types_encoded.groupby(restaurant_cuisine_types_encoded.index).sum()
+restaurant_cuisine_types_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_cuisine_types_encoded, restaurant_ratings)
+write_df_to_csv('clean_data_encoded', 'restaurant_cuisine_types_and_ratings_encoded.csv', restaurant_cuisine_types_and_ratings_encoded.reset_index())
+
+restaurant_parking_types_encoded = encode_data_frame(restaurant_parking_types)
+restaurant_parking_types_encoded = restaurant_parking_types_encoded.groupby(restaurant_parking_types_encoded.index).sum()
+restaurant_parking_types_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_parking_types_encoded, restaurant_ratings)
+write_df_to_csv('clean_data_encoded', 'restaurant_parking_types_and_ratings_encoded.csv', restaurant_parking_types_and_ratings_encoded.reset_index())
+
+restaurant_geo_places_encoded = encode_data_frame(restaurant_geo_places)
+restaurant_geo_places_encoded = restaurant_geo_places_encoded.groupby(restaurant_geo_places_encoded.index).sum()
+restaurant_geo_places_and_ratings_encoded = extract_restaurants_with_ratings(restaurant_geo_places_encoded, restaurant_ratings)
+write_df_to_csv('clean_data_encoded', 'restaurant_geo_places_and_ratings_encoded.csv', restaurant_geo_places_and_ratings_encoded)
+
+payments_and_cuisines = concatenate_tables(
+    restaurant_payment_types_and_ratings_encoded,
+    restaurant_cuisine_types_and_ratings_encoded,
+    restaurant_parking_types_and_ratings_encoded,
+    restaurant_geo_places_and_ratings_encoded
+)
+write_df_to_csv(payments_and_cuisines)
+print(payments_and_cuisines.shape)
