@@ -1,4 +1,4 @@
-index,parking_lot_fee,parking_lot_none,parking_lot_public,parking_lot_street,parking_lot_valet parking,parking_lot_validated parking,parking_lot_yes
+placeID,parking_lot_fee,parking_lot_none,parking_lot_public,parking_lot_street,parking_lot_valet parking,parking_lot_validated parking,parking_lot_yes
 132560,0.0,0.0,1.0,0.0,0.0,0.0,0.0
 132561,0.0,1.0,0.0,0.0,0.0,0.0,0.0
 132564,0.0,1.0,0.0,0.0,0.0,0.0,0.0
