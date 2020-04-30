@@ -36,7 +36,7 @@ def encode_data_frame(data_frame):
     result_encoded_data_frame = pd.DataFrame(result_encoded_array, columns=column_names, index=placeIds)
     return result_encoded_data_frame
 
-dataset = pd.read_csv('../data/concatenated_restaurant_data.csv')
+dataset = pd.read_csv('../../data/concatenated_restaurant_data.csv')
 clean_data_set = dataset.drop(['the_geom_meter', 'name', 'address', 'city',
                       'state','country','fax','url','zip',
                       'Rambience','franchise','other_services',
@@ -44,5 +44,5 @@ clean_data_set = dataset.drop(['the_geom_meter', 'name', 'address', 'city',
 
 
 result_df = encode_data_frame(clean_data_set)
-write_df_to_csv('data', 'encoded_restaurants_with_ratings_data_all.csv',result_df)
+write_df_to_csv('', 'encoded_restaurants_with_ratings_data_all.csv', result_df)
 print(result_df.head())

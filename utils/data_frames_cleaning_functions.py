@@ -1,7 +1,7 @@
 import pandas as pd
 import functools
 import numpy as np
-from draft_jenya.relevant_features_analysis import encode_data_frame
+from draft_jenya.encoding_categorical_variables.relevant_features_analysis import encode_data_frame
 
 
 def join_tables(key_value, *data_frames):

@@ -5,12 +5,12 @@ from utils.data_frames_cleaning_functions import inner_join_data_frames_by_colum
 from utils.data_frames_cleaning_functions import move_index_to_column
 
 
-restaurant_payment_types = pd.read_csv('../clean_data/restaurant_payment_types.csv')
-restaurant_cuisine_types = pd.read_csv('../clean_data/restaurant_cuisine_types.csv')
-restaurant_working_hours = pd.read_csv('../clean_data/restaurant_working_hours.csv')
-restaurant_parking_types = pd.read_csv('../clean_data/restaurant_parking_types.csv')
-restaurant_geo_places = pd.read_csv('../clean_data/restaurant_geo_places.csv')
-restaurant_ratings = pd.read_csv('../clean_data/restaurant_ratings.csv')
+restaurant_payment_types = pd.read_csv('../../clean_data/restaurant_payment_types.csv')
+restaurant_cuisine_types = pd.read_csv('../../clean_data/restaurant_cuisine_types.csv')
+restaurant_working_hours = pd.read_csv('../../clean_data/restaurant_working_hours.csv')
+restaurant_parking_types = pd.read_csv('../../clean_data/restaurant_parking_types.csv')
+restaurant_geo_places = pd.read_csv('../../clean_data/restaurant_geo_places.csv')
+restaurant_ratings = pd.read_csv('../../clean_data/restaurant_ratings.csv')
 restaurant_geo_places = restaurant_geo_places.filter(
     ['placeID',
      'alcohol',
@@ -39,7 +39,7 @@ restaurant_payments = inner_join_data_frames_by_column(restaurant_payments, rest
 restaurant_payments = move_index_to_column(restaurant_payments, 'placeID', True)
 
 # I saved this encoded data to csv file for future analysis
-write_df_to_csv('clean_data_encoded', 'restaurant_payment_types_and_ratings_encoded.csv', restaurant_payments)
+write_df_to_csv('', 'restaurant_payment_types_and_ratings_encoded.csv', restaurant_payments)
 
 # I made left join of restaurant ratings with restaurant_payments_encoded so that I always have 130 restaurants with ratings
 # and some of them can probably miss pinformation about payments
@@ -51,7 +51,7 @@ restaurants = pd.merge(left=general_rating_restaurant_place_ids, right=restauran
 restaurant_parkings = encode_data_frame_and_group_by_index(restaurant_parking_types)
 restaurant_parkings = inner_join_data_frames_by_column(restaurant_parkings, restaurant_ratings, 'placeID').reset_index()
 restaurant_parkings = move_index_to_column(restaurant_parkings, 'placeID')
-write_df_to_csv('clean_data_encoded', 'restaurant_parking_types_and_ratings_encoded.csv', restaurant_parkings)
+write_df_to_csv('', 'restaurant_parking_types_and_ratings_encoded.csv', restaurant_parkings)
 
 restaurants = pd.merge(left=restaurants, right=restaurant_parkings, on='placeID', how="left")
 
@@ -59,7 +59,7 @@ restaurants = pd.merge(left=restaurants, right=restaurant_parkings, on='placeID'
 restaurant_cuisines = encode_data_frame_and_group_by_index(restaurant_cuisine_types)
 restaurant_cuisines = inner_join_data_frames_by_column(restaurant_cuisines, restaurant_ratings, 'placeID').reset_index()
 restaurant_cuisines = move_index_to_column(restaurant_cuisines, 'placeID')
-write_df_to_csv('clean_data_encoded', 'restaurant_cuisine_types_and_ratings_encoded.csv', restaurant_cuisines)
+write_df_to_csv('', 'restaurant_cuisine_types_and_ratings_encoded.csv', restaurant_cuisines)
 
 restaurants = pd.merge(left=restaurants, right=restaurant_cuisines, on='placeID', how="left")
 
@@ -67,11 +67,11 @@ restaurants = pd.merge(left=restaurants, right=restaurant_cuisines, on='placeID'
 restaurant_geoplaces = encode_data_frame_and_group_by_index(restaurant_geo_places)
 restaurant_geoplaces = inner_join_data_frames_by_column(restaurant_geoplaces, restaurant_ratings, 'placeID').reset_index()
 restaurant_geoplaces = move_index_to_column(restaurant_geoplaces, 'placeID')
-write_df_to_csv('clean_data_encoded', 'restaurant_geo_places_and_ratings_encoded.csv', restaurant_geoplaces)
+write_df_to_csv('', 'restaurant_geo_places_and_ratings_encoded.csv', restaurant_geoplaces)
 
 restaurants = pd.merge(left=restaurants, right=restaurant_geoplaces, on='placeID', how="left")
 
 # Here I replaced NaN values in result data frame with zero so it means that restaurant is missing information in this type of category
 restaurants = restaurants.fillna(0)
-write_df_to_csv('clean_data_encoded', 'all_restaurant_data_encoded.csv', restaurants)
+write_df_to_csv('', 'all_restaurant_data_encoded.csv', restaurants)
 print(restaurants.shape)
