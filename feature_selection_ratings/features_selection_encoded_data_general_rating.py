@@ -9,9 +9,9 @@ from feature_selection_ratings.feature_selection import filter_selected_features
 from feature_selection_ratings.feature_selection import calculate_selected_features_prediction_accuracy_with_random_forest_regression
 from feature_selection_ratings.feature_selection import calculate_selected_features_prediction_accuracy_with_logistic_regression
 from feature_selection_ratings.feature_selection import calculate_selected_features_prediction_accuracy_with_multiple_linear_regression
+from sklearn.metrics import r2_score
 
-
-encoded_restaurant_data = pd.read_csv('../clean_data_encoded/all_restaurant_data_encoded.csv')
+encoded_restaurant_data = pd.read_csv('clean_data_encoded/all_restaurant_data_encoded.csv')
 
 print(encoded_restaurant_data.columns)
 X = encoded_restaurant_data.iloc[:,2:].values
@@ -26,6 +26,8 @@ predictions = calculate_selected_features_prediction_accuracy_with_multiple_line
 predictions_vs_real_1 = []
 for i, prediction in enumerate(predictions):
     predictions_vs_real_1.append((prediction, y_test_all_features[i]))
+    
+r2_score(y_test_all_features,predictions)
 
 # Finding selected features with chi-squared method
 selected_features, feature_scores = find_selected_features_with_chi_squared_method(X_train_all_features,
