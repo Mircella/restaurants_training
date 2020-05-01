@@ -1,6 +1,7 @@
 import pandas as pd
 import functools
 import numpy as np
+from draft_jenya.encoding_categorical_variables.relevant_features_analysis import encode_data_frame
 
 
 def join_tables(key_value, *data_frames):
@@ -44,12 +45,22 @@ def find_unique_records_number_by_column(column, *data_frames):
     return np.unique(concatenated_column_values)
 
 
-def extract_restaurants_with_ratings(source_data_frame, restaurants_with_ratings):
+def inner_join_data_frames_by_column(source_data_frame, restaurants_with_ratings, column_name):
     result = []
     for index, restaurant in source_data_frame.iterrows():
-        if restaurant['placeID'] in restaurants_with_ratings:
+        if index in restaurants_with_ratings[column_name].unique():
             result.append(restaurant)
-    return result
+    return pd.DataFrame(result)
+
+
+def add_missing_restaurants_with_ratings(source_data_frame, restaurants_with_ratings):
+    restaurants_with_ratings_ids = restaurants_with_ratings['placeID'].unique()
+    source_data_frame_ids = source_data_frame.index
+    is_restaurant_with_rating_in_source_df = [False if elem in source_data_frame_ids else True for elem in restaurants_with_ratings_ids]
+    restaurants_with_ratings_ids_not_in_source_df = restaurants_with_ratings_ids[is_restaurant_with_rating_in_source_df]
+    result = np.full((len(restaurants_with_ratings_ids_not_in_source_df), len(source_data_frame.columns)), 0)
+    return pd.DataFrame(result, index=restaurants_with_ratings_ids_not_in_source_df, columns=source_data_frame.columns)
+
 
 def merge_and_group(left_df, right_df, merge_column, group_column, estimate_column):
     merged_df = pd.merge(left=left_df, right=right_df, on=merge_column, how="left")
@@ -59,3 +70,16 @@ def merge_and_group(left_df, right_df, merge_column, group_column, estimate_colu
     # Calculate the mean ratings
     print(grouped_df[estimate_column].mean())
     print(grouped_df[estimate_column].describe())
+
+
+def move_index_to_column(data_frame, column_name, reset=False):
+    if reset:
+        data_frame = data_frame.reset_index()
+    data_frame.rename(columns={'index': column_name}, inplace=True)
+    return data_frame
+
+
+def encode_data_frame_and_group_by_index(data_frame):
+    data_frame = encode_data_frame(data_frame)
+    data_frame = data_frame.groupby(data_frame.index).sum()
+    return data_frame

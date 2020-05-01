@@ -3,7 +3,7 @@ import numpy as np
 from draft_jenya.restaurants_data_preprocessing import all_restaurant_ids
 from draft_jenya.users_data_preprocessing import all_users_ids
 from utils.utils_for_files_storing_and_reading import write_df_to_csv
-
+from utils.data_frames_cleaning_functions import move_index_to_column
 
 restaurant_ratings = pd.read_csv('../data/rating_final.csv', delimiter =';')
 
@@ -47,14 +47,14 @@ for restaurant_id, user_id, general_rating, food_rating, service_rating in zippe
     food_ratings_matrix_df.loc[restaurant_id, user_id] = food_rating
     service_ratings_matrix_df.loc[restaurant_id, user_id] = service_rating
 
-print(f"Matrix of general ratings:{general_ratings_matrix_df}")
-print(f"Matrix of food ratings:{food_ratings_matrix_df}")
-print(f"Matrix of service ratings:{service_ratings_matrix_df}")
+print(f"Matrix of general ratings:\n{general_ratings_matrix_df}")
+print(f"Matrix of food ratings:\n{food_ratings_matrix_df}")
+print(f"Matrix of service ratings:\n{service_ratings_matrix_df}")
 
 # write ratings matrices to csv
-write_df_to_csv(data_dir="../ratings_matrices", file_name="general_ratings_matrix.csv", data_frame=general_ratings_matrix_df)
-write_df_to_csv(data_dir="../ratings_matrices", file_name="food_ratings_matrix.csv", data_frame=food_ratings_matrix_df)
-write_df_to_csv(data_dir="../ratings_matrices", file_name="service_ratings_matrix.csv", data_frame=service_ratings_matrix_df)
+write_df_to_csv(data_dir="", file_name="general_ratings_matrix.csv", data_frame=general_ratings_matrix_df)
+write_df_to_csv(data_dir="", file_name="food_ratings_matrix.csv", data_frame=food_ratings_matrix_df)
+write_df_to_csv(data_dir="", file_name="service_ratings_matrix.csv", data_frame=service_ratings_matrix_df)
 
 # I build a matrix to find which restaurant records across all restaurant data files have ratings
 # Initially I create the matrix filled with 0 which means that restaurant does not have rating
@@ -66,6 +66,8 @@ restaurants_with_ratings_estimation = pd.DataFrame(np.zeros(general_ratings_matr
 # To fill this matrix we can use any of general_ratings_matrix_df,food_ratings_matrix_df or service_ratings_matrix_df
 # because in rating_final.csv there is no records where one of the general,food or service rating is missing for any row
 restaurants_with_ratings_estimation[general_ratings_matrix_df != -1] = 1
-print(f"Matrix of ratings between restaurants and users:{restaurants_with_ratings_estimation}")
+restaurants_with_ratings_estimation = move_index_to_column(data_frame=restaurants_with_ratings_estimation, column_name='placeID', reset=True)
+print(f"Matrix of ratings between restaurants and users:\n{restaurants_with_ratings_estimation}")
 
-write_df_to_csv(data_dir="../ratings_matrices", file_name="restaurants_with_ratings_estimation.csv", data_frame=restaurants_with_ratings_estimation)
+write_df_to_csv(data_dir="", file_name="restaurants_with_ratings_estimation.csv", data_frame=restaurants_with_ratings_estimation)
+
