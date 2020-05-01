@@ -26,6 +26,7 @@ predictions = calculate_selected_features_prediction_accuracy_with_multiple_line
 predictions_vs_real = []
 for i, prediction in enumerate(predictions):
     predictions_vs_real.append((prediction, y_test_all_features[i]))
+a = pd.DataFrame(predictions_vs_real)
 print(predictions_vs_real)
 # # Finding selected features with chi-squared method
 # selected_features, feature_scores = find_selected_features_with_chi_squared_method(X_train_all_features,
