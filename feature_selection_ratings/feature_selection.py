@@ -95,3 +95,8 @@ def calculate_selected_features_prediction_accuracy_with_multiple_linear_regress
     y_pred = regressor.predict(X_test)
 
     return y_pred
+
+def find_selected_features_by_indices(data_frame, selected_features_indices):
+    data_frame_columns = data_frame.columns
+    selected_features = [data_frame_columns[index] for index in selected_features_indices]
+    return selected_features
