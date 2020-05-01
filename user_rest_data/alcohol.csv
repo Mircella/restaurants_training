@@ -1,0 +1,1162 @@
+placeID,userID,rating,alcohol,drink_level
+135085,U1077,2,No_Alcohol_Served,social drinker
+135038,U1077,2,No_Alcohol_Served,social drinker
+132825,U1077,2,No_Alcohol_Served,social drinker
+135060,U1077,1,No_Alcohol_Served,social drinker
+135104,U1068,1,Full_Bar,casual drinker
+132740,U1068,0,No_Alcohol_Served,casual drinker
+132663,U1068,1,No_Alcohol_Served,casual drinker
+132732,U1068,0,No_Alcohol_Served,casual drinker
+132630,U1068,1,No_Alcohol_Served,casual drinker
+132584,U1067,2,No_Alcohol_Served,abstemious
+132733,U1067,1,No_Alcohol_Served,abstemious
+132732,U1067,1,No_Alcohol_Served,abstemious
+132630,U1067,1,No_Alcohol_Served,abstemious
+135104,U1067,0,Full_Bar,abstemious
+132560,U1067,1,No_Alcohol_Served,abstemious
+132584,U1103,1,No_Alcohol_Served,abstemious
+132732,U1103,0,No_Alcohol_Served,abstemious
+132630,U1103,1,No_Alcohol_Served,abstemious
+132613,U1103,2,No_Alcohol_Served,abstemious
+132667,U1103,1,No_Alcohol_Served,abstemious
+135104,U1103,1,Full_Bar,abstemious
+132663,U1103,1,No_Alcohol_Served,abstemious
+132733,U1103,2,No_Alcohol_Served,abstemious
+132660,U1107,2,No_Alcohol_Served,abstemious
+132584,U1107,2,No_Alcohol_Served,abstemious
+132733,U1107,2,No_Alcohol_Served,abstemious
+135088,U1044,2,No_Alcohol_Served,social drinker
+132583,U1044,1,No_Alcohol_Served,social drinker
+132608,U1070,2,No_Alcohol_Served,casual drinker
+132609,U1070,1,No_Alcohol_Served,casual drinker
+132613,U1070,1,No_Alcohol_Served,casual drinker
+132663,U1031,0,No_Alcohol_Served,abstemious
+132665,U1031,0,No_Alcohol_Served,abstemious
+132668,U1031,0,No_Alcohol_Served,abstemious
+132630,U1082,1,No_Alcohol_Served,abstemious
+132715,U1023,0,No_Alcohol_Served,casual drinker
+132717,U1023,0,No_Alcohol_Served,casual drinker
+132613,U1082,0,No_Alcohol_Served,abstemious
+132594,U1082,0,No_Alcohol_Served,abstemious
+132608,U1082,0,No_Alcohol_Served,abstemious
+132609,U1082,0,No_Alcohol_Served,abstemious
+132663,U1082,0,No_Alcohol_Served,abstemious
+132560,U1082,0,No_Alcohol_Served,abstemious
+132564,U1060,2,No_Alcohol_Served,casual drinker
+132717,U1060,2,No_Alcohol_Served,casual drinker
+132733,U1060,2,No_Alcohol_Served,casual drinker
+132740,U1060,1,No_Alcohol_Served,casual drinker
+135071,U1015,0,Full_Bar,social drinker
+132733,U1123,1,No_Alcohol_Served,abstemious
+132608,U1123,1,No_Alcohol_Served,abstemious
+135104,U1123,2,Full_Bar,abstemious
+132584,U1123,1,No_Alcohol_Served,abstemious
+132667,U1123,1,No_Alcohol_Served,abstemious
+132740,U1123,1,No_Alcohol_Served,abstemious
+132613,U1123,1,No_Alcohol_Served,abstemious
+132594,U1123,1,No_Alcohol_Served,abstemious
+132740,U1021,2,No_Alcohol_Served,social drinker
+132626,U1026,2,No_Alcohol_Served,abstemious
+132668,U1021,2,No_Alcohol_Served,social drinker
+132715,U1021,2,No_Alcohol_Served,social drinker
+134987,U1044,0,Wine-Beer,social drinker
+135034,U1083,2,No_Alcohol_Served,abstemious
+132723,U1083,1,Full_Bar,abstemious
+135046,U1083,2,No_Alcohol_Served,abstemious
+135075,U1108,2,No_Alcohol_Served,abstemious
+132572,U1108,1,No_Alcohol_Served,abstemious
+135074,U1108,2,Wine-Beer,abstemious
+135028,U1108,1,Wine-Beer,abstemious
+135085,U1108,1,No_Alcohol_Served,abstemious
+135032,U1108,2,Wine-Beer,abstemious
+135086,U1108,1,No_Alcohol_Served,abstemious
+132723,U1108,2,Full_Bar,abstemious
+135046,U1108,1,No_Alcohol_Served,abstemious
+135058,U1108,1,No_Alcohol_Served,abstemious
+135001,U1012,1,Wine-Beer,casual drinker
+134983,U1012,2,Full_Bar,casual drinker
+134996,U1012,2,Wine-Beer,casual drinker
+135019,U1093,2,No_Alcohol_Served,casual drinker
+134996,U1093,2,Wine-Beer,casual drinker
+135001,U1093,2,Wine-Beer,casual drinker
+134976,U1093,2,No_Alcohol_Served,casual drinker
+134999,U1093,2,No_Alcohol_Served,casual drinker
+135018,U1030,2,Full_Bar,casual drinker
+135013,U1093,2,No_Alcohol_Served,casual drinker
+134986,U1030,2,Wine-Beer,casual drinker
+134986,U1012,2,Wine-Beer,casual drinker
+135018,U1012,2,Full_Bar,casual drinker
+135088,U1030,1,No_Alcohol_Served,casual drinker
+132767,U1093,2,Wine-Beer,casual drinker
+135016,U1030,0,No_Alcohol_Served,casual drinker
+135011,U1093,1,No_Alcohol_Served,casual drinker
+132767,U1030,0,Wine-Beer,casual drinker
+135019,U1030,0,No_Alcohol_Served,casual drinker
+135109,U1030,0,Wine-Beer,casual drinker
+134996,U1030,0,Wine-Beer,casual drinker
+135011,U1066,1,No_Alcohol_Served,abstemious
+134999,U1066,1,No_Alcohol_Served,abstemious
+134975,U1127,2,Full_Bar,abstemious
+135021,U1127,2,No_Alcohol_Served,abstemious
+134987,U1127,2,Wine-Beer,abstemious
+134996,U1127,2,Wine-Beer,abstemious
+132768,U1017,1,No_Alcohol_Served,casual drinker
+135019,U1066,2,No_Alcohol_Served,abstemious
+134975,U1017,2,Full_Bar,casual drinker
+134983,U1017,0,Full_Bar,casual drinker
+132767,U1066,1,Wine-Beer,abstemious
+135021,U1100,2,No_Alcohol_Served,casual drinker
+134996,U1100,2,Wine-Beer,casual drinker
+135013,U1066,1,No_Alcohol_Served,abstemious
+135000,U1100,2,No_Alcohol_Served,casual drinker
+135001,U1100,2,Wine-Beer,casual drinker
+132768,U1100,2,No_Alcohol_Served,casual drinker
+134976,U1100,2,No_Alcohol_Served,casual drinker
+134983,U1133,1,Full_Bar,abstemious
+134986,U1133,2,Wine-Beer,abstemious
+132766,U1133,1,Wine-Beer,abstemious
+132767,U1133,0,Wine-Beer,abstemious
+135021,U1133,2,No_Alcohol_Served,abstemious
+135001,U1133,2,Wine-Beer,abstemious
+134975,U1133,1,Full_Bar,abstemious
+134992,U1133,1,Wine-Beer,abstemious
+135019,U1133,1,No_Alcohol_Served,abstemious
+134987,U1118,0,Wine-Beer,casual drinker
+135016,U1072,1,No_Alcohol_Served,casual drinker
+132773,U1072,2,Wine-Beer,casual drinker
+135088,U1072,0,No_Alcohol_Served,casual drinker
+132561,U1026,1,No_Alcohol_Served,abstemious
+132706,U1026,0,No_Alcohol_Served,abstemious
+132654,U1026,0,No_Alcohol_Served,abstemious
+132665,U1026,2,No_Alcohol_Served,abstemious
+132740,U1023,0,No_Alcohol_Served,casual drinker
+132733,U1023,2,No_Alcohol_Served,casual drinker
+132668,U1080,1,No_Alcohol_Served,social drinker
+132660,U1080,2,No_Alcohol_Served,social drinker
+132733,U1080,1,No_Alcohol_Served,social drinker
+132608,U1080,2,No_Alcohol_Served,social drinker
+132660,U1063,2,No_Alcohol_Served,casual drinker
+132584,U1063,2,No_Alcohol_Served,casual drinker
+132609,U1063,1,No_Alcohol_Served,casual drinker
+135104,U1063,1,Full_Bar,casual drinker
+132667,U1063,1,No_Alcohol_Served,casual drinker
+132564,U1080,1,No_Alcohol_Served,social drinker
+132715,U1080,1,No_Alcohol_Served,social drinker
+132732,U1082,0,No_Alcohol_Served,abstemious
+132733,U1082,0,No_Alcohol_Served,abstemious
+135011,U1074,2,No_Alcohol_Served,casual drinker
+134987,U1074,2,Wine-Beer,casual drinker
+134976,U1074,2,No_Alcohol_Served,casual drinker
+135018,U1117,1,Full_Bar,abstemious
+132766,U1117,0,Wine-Beer,abstemious
+135088,U1117,1,No_Alcohol_Served,abstemious
+135016,U1117,2,No_Alcohol_Served,abstemious
+132773,U1117,1,Wine-Beer,abstemious
+135000,U1117,1,No_Alcohol_Served,abstemious
+132583,U1118,0,No_Alcohol_Served,casual drinker
+132768,U1118,0,No_Alcohol_Served,casual drinker
+135021,U1118,2,No_Alcohol_Served,casual drinker
+134983,U1118,0,Full_Bar,casual drinker
+135001,U1118,0,Wine-Beer,casual drinker
+134992,U1118,0,Wine-Beer,casual drinker
+135088,U1020,1,No_Alcohol_Served,abstemious
+132768,U1020,2,No_Alcohol_Served,abstemious
+134996,U1020,1,Wine-Beer,abstemious
+135109,U1020,2,Wine-Beer,abstemious
+135088,U1051,1,No_Alcohol_Served,casual drinker
+135109,U1051,1,Wine-Beer,casual drinker
+132768,U1051,1,No_Alcohol_Served,casual drinker
+135051,U1055,1,No_Alcohol_Served,abstemious
+135075,U1055,2,No_Alcohol_Served,abstemious
+132572,U1055,2,No_Alcohol_Served,abstemious
+135028,U1055,2,Wine-Beer,abstemious
+135025,U1055,2,No_Alcohol_Served,abstemious
+132572,U1083,2,No_Alcohol_Served,abstemious
+135049,U1083,0,No_Alcohol_Served,abstemious
+135106,U1055,2,Wine-Beer,abstemious
+135072,U1083,1,No_Alcohol_Served,abstemious
+135074,U1083,2,Wine-Beer,abstemious
+132755,U1083,2,No_Alcohol_Served,abstemious
+135044,U1083,1,No_Alcohol_Served,abstemious
+135048,U1055,2,Wine-Beer,abstemious
+135047,U1055,2,Wine-Beer,abstemious
+132754,U1055,2,No_Alcohol_Served,abstemious
+132825,U1055,2,No_Alcohol_Served,abstemious
+135076,U1053,1,Wine-Beer,casual drinker
+135032,U1053,2,Wine-Beer,casual drinker
+132825,U1053,1,No_Alcohol_Served,casual drinker
+135063,U1053,2,No_Alcohol_Served,casual drinker
+135018,U1035,1,Full_Bar,casual drinker
+132773,U1035,2,Wine-Beer,casual drinker
+135042,U1053,2,No_Alcohol_Served,casual drinker
+135053,U1053,2,No_Alcohol_Served,casual drinker
+132754,U1053,1,No_Alcohol_Served,casual drinker
+132583,U1035,1,No_Alcohol_Served,casual drinker
+135081,U1053,2,No_Alcohol_Served,casual drinker
+135025,U1053,2,No_Alcohol_Served,casual drinker
+135038,U1053,2,No_Alcohol_Served,casual drinker
+135060,U1053,2,No_Alcohol_Served,casual drinker
+135062,U1053,2,No_Alcohol_Served,casual drinker
+135047,U1053,2,Wine-Beer,casual drinker
+135042,U1064,1,No_Alcohol_Served,casual drinker
+135069,U1081,1,Wine-Beer,casual drinker
+135057,U1064,1,Wine-Beer,casual drinker
+135076,U1081,1,Wine-Beer,casual drinker
+135043,U1081,0,No_Alcohol_Served,casual drinker
+135069,U1064,0,Wine-Beer,casual drinker
+135039,U1081,0,No_Alcohol_Served,casual drinker
+135060,U1064,1,No_Alcohol_Served,casual drinker
+135052,U1064,2,Full_Bar,casual drinker
+132825,U1081,1,No_Alcohol_Served,casual drinker
+135032,U1081,0,Wine-Beer,casual drinker
+135028,U1081,1,Wine-Beer,casual drinker
+135085,U1081,1,No_Alcohol_Served,casual drinker
+135052,U1081,0,Full_Bar,casual drinker
+135030,U1081,1,No_Alcohol_Served,casual drinker
+135027,U1081,0,Wine-Beer,casual drinker
+132830,U1001,1,No_Alcohol_Served,abstemious
+132825,U1001,2,No_Alcohol_Served,abstemious
+135076,U1014,1,Wine-Beer,abstemious
+132830,U1088,0,No_Alcohol_Served,social drinker
+135108,U1088,2,No_Alcohol_Served,social drinker
+135069,U1014,1,Wine-Beer,abstemious
+135050,U1014,2,Wine-Beer,abstemious
+135057,U1088,1,Wine-Beer,social drinker
+135081,U1014,2,No_Alcohol_Served,abstemious
+135057,U1014,1,Wine-Beer,abstemious
+135070,U1014,2,No_Alcohol_Served,abstemious
+135041,U1088,2,Wine-Beer,social drinker
+135069,U1088,1,Wine-Beer,social drinker
+135082,U1088,2,No_Alcohol_Served,social drinker
+135043,U1014,1,No_Alcohol_Served,abstemious
+135042,U1014,1,No_Alcohol_Served,abstemious
+135071,U1088,0,Full_Bar,social drinker
+135054,U1088,2,No_Alcohol_Served,social drinker
+135070,U1088,2,No_Alcohol_Served,social drinker
+135066,U1014,2,Wine-Beer,abstemious
+135032,U1088,2,Wine-Beer,social drinker
+135081,U1088,1,No_Alcohol_Served,social drinker
+135051,U1088,2,No_Alcohol_Served,social drinker
+132830,U1014,2,No_Alcohol_Served,abstemious
+135082,U1014,0,No_Alcohol_Served,abstemious
+135066,U1056,2,Wine-Beer,social drinker
+135050,U1056,0,Wine-Beer,social drinker
+135076,U1056,2,Wine-Beer,social drinker
+135081,U1056,2,No_Alcohol_Served,social drinker
+135062,U1056,2,No_Alcohol_Served,social drinker
+135027,U1056,2,Wine-Beer,social drinker
+135085,U1056,2,No_Alcohol_Served,social drinker
+135052,U1056,2,Full_Bar,social drinker
+132825,U1056,2,No_Alcohol_Served,social drinker
+135051,U1056,2,No_Alcohol_Served,social drinker
+135047,U1134,1,Wine-Beer,casual drinker
+135026,U1134,0,Full_Bar,casual drinker
+135044,U1134,1,No_Alcohol_Served,casual drinker
+132825,U1134,1,No_Alcohol_Served,casual drinker
+135059,U1134,2,Wine-Beer,casual drinker
+135065,U1134,2,Wine-Beer,casual drinker
+135046,U1134,2,No_Alcohol_Served,casual drinker
+135085,U1134,2,No_Alcohol_Served,casual drinker
+135079,U1134,1,No_Alcohol_Served,casual drinker
+135055,U1134,2,No_Alcohol_Served,casual drinker
+132754,U1134,2,No_Alcohol_Served,casual drinker
+132572,U1134,0,No_Alcohol_Served,casual drinker
+135075,U1134,2,No_Alcohol_Served,casual drinker
+135080,U1134,1,No_Alcohol_Served,casual drinker
+135064,U1134,2,No_Alcohol_Served,casual drinker
+135074,U1134,2,Wine-Beer,casual drinker
+135041,U1106,1,Wine-Beer,casual drinker
+135069,U1126,0,Wine-Beer,casual drinker
+135032,U1106,0,Wine-Beer,casual drinker
+135057,U1126,2,Wine-Beer,casual drinker
+132830,U1126,0,No_Alcohol_Served,casual drinker
+135028,U1106,2,Wine-Beer,casual drinker
+135040,U1126,0,Wine-Beer,casual drinker
+135106,U1126,2,Wine-Beer,casual drinker
+135052,U1126,2,Full_Bar,casual drinker
+135041,U1126,2,Wine-Beer,casual drinker
+135038,U1126,1,No_Alcohol_Served,casual drinker
+135054,U1126,1,No_Alcohol_Served,casual drinker
+135108,U1126,2,No_Alcohol_Served,casual drinker
+134986,U1044,2,Wine-Beer,social drinker
+135054,U1124,1,No_Alcohol_Served,casual drinker
+132768,U1044,2,No_Alcohol_Served,social drinker
+135108,U1124,1,No_Alcohol_Served,casual drinker
+135032,U1124,1,Wine-Beer,casual drinker
+135071,U1124,1,Full_Bar,casual drinker
+135070,U1124,1,No_Alcohol_Served,casual drinker
+135069,U1124,1,Wine-Beer,casual drinker
+135081,U1124,1,No_Alcohol_Served,casual drinker
+135057,U1124,1,Wine-Beer,casual drinker
+135039,U1124,1,No_Alcohol_Served,casual drinker
+135050,U1124,0,Wine-Beer,casual drinker
+135043,U1018,0,No_Alcohol_Served,casual drinker
+135043,U1125,1,No_Alcohol_Served,casual drinker
+135081,U1125,0,No_Alcohol_Served,casual drinker
+135076,U1125,1,Wine-Beer,casual drinker
+135082,U1018,2,No_Alcohol_Served,casual drinker
+135050,U1125,2,Wine-Beer,casual drinker
+135066,U1125,1,Wine-Beer,casual drinker
+135032,U1125,1,Wine-Beer,casual drinker
+134986,U1119,2,Wine-Beer,abstemious
+135021,U1119,0,No_Alcohol_Served,abstemious
+135001,U1119,2,Wine-Beer,abstemious
+135042,U1125,1,No_Alcohol_Served,casual drinker
+132583,U1119,2,No_Alcohol_Served,abstemious
+135063,U1125,1,No_Alcohol_Served,casual drinker
+132768,U1119,2,No_Alcohol_Served,abstemious
+135060,U1125,1,No_Alcohol_Served,casual drinker
+135038,U1125,2,No_Alcohol_Served,casual drinker
+135062,U1125,1,No_Alcohol_Served,casual drinker
+135081,U1018,1,No_Alcohol_Served,casual drinker
+135057,U1018,1,Wine-Beer,casual drinker
+135066,U1018,1,Wine-Beer,casual drinker
+135032,U1018,1,Wine-Beer,casual drinker
+135062,U1018,0,No_Alcohol_Served,casual drinker
+135025,U1018,1,No_Alcohol_Served,casual drinker
+135069,U1018,0,Wine-Beer,casual drinker
+135108,U1018,1,No_Alcohol_Served,casual drinker
+135039,U1076,2,No_Alcohol_Served,social drinker
+135038,U1076,1,No_Alcohol_Served,social drinker
+135027,U1076,0,Wine-Beer,social drinker
+135042,U1076,2,No_Alcohol_Served,social drinker
+135040,U1022,0,Wine-Beer,casual drinker
+135073,U1076,2,Wine-Beer,social drinker
+135033,U1022,1,No_Alcohol_Served,casual drinker
+135025,U1022,0,No_Alcohol_Served,casual drinker
+135032,U1022,1,Wine-Beer,casual drinker
+135057,U1022,2,Wine-Beer,casual drinker
+135060,U1022,1,No_Alcohol_Served,casual drinker
+135052,U1022,2,Full_Bar,casual drinker
+135038,U1022,2,No_Alcohol_Served,casual drinker
+135081,U1022,0,No_Alcohol_Served,casual drinker
+135045,U1022,2,Wine-Beer,casual drinker
+135051,U1022,2,No_Alcohol_Served,casual drinker
+135073,U1022,2,Wine-Beer,casual drinker
+135062,U1022,1,No_Alcohol_Served,casual drinker
+135063,U1022,2,No_Alcohol_Served,casual drinker
+135054,U1094,0,No_Alcohol_Served,abstemious
+135082,U1094,0,No_Alcohol_Served,abstemious
+135057,U1094,0,Wine-Beer,abstemious
+135071,U1094,0,Full_Bar,abstemious
+132830,U1094,0,No_Alcohol_Served,abstemious
+135070,U1094,0,No_Alcohol_Served,abstemious
+135108,U1094,0,No_Alcohol_Served,abstemious
+135069,U1094,0,Wine-Beer,abstemious
+135047,U1116,2,Wine-Beer,social drinker
+135060,U1116,0,No_Alcohol_Served,social drinker
+135038,U1116,2,No_Alcohol_Served,social drinker
+135085,U1116,2,No_Alcohol_Served,social drinker
+135052,U1116,2,Full_Bar,social drinker
+135025,U1116,2,No_Alcohol_Served,social drinker
+135059,U1116,0,Wine-Beer,social drinker
+135027,U1116,0,Wine-Beer,social drinker
+132825,U1116,2,No_Alcohol_Served,social drinker
+135030,U1116,1,No_Alcohol_Served,social drinker
+132834,U1116,2,No_Alcohol_Served,social drinker
+135057,U1105,0,Wine-Beer,social drinker
+135069,U1105,0,Wine-Beer,social drinker
+132830,U1105,0,No_Alcohol_Served,social drinker
+135040,U1105,0,Wine-Beer,social drinker
+135033,U1105,0,No_Alcohol_Served,social drinker
+135054,U1105,0,No_Alcohol_Served,social drinker
+135039,U1105,0,No_Alcohol_Served,social drinker
+135052,U1105,0,Full_Bar,social drinker
+135081,U1075,1,No_Alcohol_Served,casual drinker
+135066,U1075,2,Wine-Beer,casual drinker
+135050,U1075,2,Wine-Beer,casual drinker
+135108,U1007,1,No_Alcohol_Served,casual drinker
+135076,U1075,2,Wine-Beer,casual drinker
+135057,U1007,1,Wine-Beer,casual drinker
+135032,U1075,1,Wine-Beer,casual drinker
+132834,U1075,1,No_Alcohol_Served,casual drinker
+135057,U1075,2,Wine-Beer,casual drinker
+132830,U1075,1,No_Alcohol_Served,casual drinker
+135062,U1075,1,No_Alcohol_Served,casual drinker
+135039,U1075,2,No_Alcohol_Served,casual drinker
+135051,U1075,1,No_Alcohol_Served,casual drinker
+135041,U1075,1,Wine-Beer,casual drinker
+135057,U1115,2,Wine-Beer,social drinker
+135082,U1115,2,No_Alcohol_Served,social drinker
+135054,U1115,0,No_Alcohol_Served,social drinker
+135108,U1115,1,No_Alcohol_Served,social drinker
+135069,U1115,1,Wine-Beer,social drinker
+132830,U1115,2,No_Alcohol_Served,social drinker
+135070,U1115,1,No_Alcohol_Served,social drinker
+135071,U1115,2,Full_Bar,social drinker
+135000,U1072,0,No_Alcohol_Served,casual drinker
+132834,U1024,1,No_Alcohol_Served,abstemious
+135106,U1024,1,Wine-Beer,abstemious
+135042,U1024,1,No_Alcohol_Served,abstemious
+132825,U1024,1,No_Alcohol_Served,abstemious
+135060,U1024,1,No_Alcohol_Served,abstemious
+135032,U1024,2,Wine-Beer,abstemious
+135039,U1024,2,No_Alcohol_Served,abstemious
+135045,U1024,2,Wine-Beer,abstemious
+135027,U1024,1,Wine-Beer,abstemious
+135073,U1024,1,Wine-Beer,abstemious
+135051,U1024,1,No_Alcohol_Served,abstemious
+135041,U1024,1,Wine-Beer,abstemious
+135038,U1024,1,No_Alcohol_Served,abstemious
+135028,U1024,1,Wine-Beer,abstemious
+135030,U1024,1,No_Alcohol_Served,abstemious
+135038,U1132,1,No_Alcohol_Served,casual drinker
+132825,U1132,2,No_Alcohol_Served,casual drinker
+135085,U1132,2,No_Alcohol_Served,casual drinker
+135062,U1132,2,No_Alcohol_Served,casual drinker
+135025,U1132,1,No_Alcohol_Served,casual drinker
+135052,U1132,2,Full_Bar,casual drinker
+135028,U1132,2,Wine-Beer,casual drinker
+135032,U1132,1,Wine-Beer,casual drinker
+135051,U1132,1,No_Alcohol_Served,casual drinker
+135027,U1132,2,Wine-Beer,casual drinker
+135050,U1005,1,Wine-Beer,abstemious
+135076,U1005,2,Wine-Beer,abstemious
+132830,U1005,1,No_Alcohol_Served,abstemious
+135066,U1005,2,Wine-Beer,abstemious
+135041,U1005,1,Wine-Beer,abstemious
+135057,U1005,1,Wine-Beer,abstemious
+135043,U1005,0,No_Alcohol_Served,abstemious
+135042,U1005,2,No_Alcohol_Served,abstemious
+135032,U1005,2,Wine-Beer,abstemious
+135085,U1120,0,No_Alcohol_Served,abstemious
+132845,U1120,1,No_Alcohol_Served,abstemious
+135032,U1120,1,Wine-Beer,abstemious
+135045,U1120,1,Wine-Beer,abstemious
+135038,U1120,0,No_Alcohol_Served,abstemious
+135060,U1004,1,No_Alcohol_Served,abstemious
+135028,U1004,2,Wine-Beer,abstemious
+135106,U1004,2,Wine-Beer,abstemious
+135057,U1120,2,Wine-Beer,abstemious
+135062,U1004,2,No_Alcohol_Served,abstemious
+135026,U1120,1,Full_Bar,abstemious
+135032,U1004,2,Wine-Beer,abstemious
+132846,U1120,2,No_Alcohol_Served,abstemious
+135027,U1077,0,Wine-Beer,social drinker
+132847,U1120,2,No_Alcohol_Served,abstemious
+135054,U1037,2,No_Alcohol_Served,social drinker
+135082,U1037,0,No_Alcohol_Served,social drinker
+135070,U1037,0,No_Alcohol_Served,social drinker
+132845,U1037,0,No_Alcohol_Served,social drinker
+135108,U1037,2,No_Alcohol_Served,social drinker
+132847,U1037,1,No_Alcohol_Served,social drinker
+132830,U1037,2,No_Alcohol_Served,social drinker
+135000,U1035,2,No_Alcohol_Served,casual drinker
+134996,U1035,2,Wine-Beer,casual drinker
+134986,U1035,2,Wine-Beer,casual drinker
+132851,U1052,1,No_Alcohol_Served,social drinker
+132834,U1036,1,No_Alcohol_Served,social drinker
+135064,U1036,2,No_Alcohol_Served,social drinker
+135079,U1036,2,No_Alcohol_Served,social drinker
+135042,U1036,2,No_Alcohol_Served,social drinker
+135085,U1036,2,No_Alcohol_Served,social drinker
+135025,U1036,2,No_Alcohol_Served,social drinker
+132825,U1036,2,No_Alcohol_Served,social drinker
+135059,U1036,2,Wine-Beer,social drinker
+135052,U1036,2,Full_Bar,social drinker
+132754,U1036,2,No_Alcohol_Served,social drinker
+135065,U1036,0,Wine-Beer,social drinker
+135045,U1036,2,Wine-Beer,social drinker
+132854,U1038,1,Wine-Beer,social drinker
+132856,U1038,0,Wine-Beer,social drinker
+132858,U1038,0,No_Alcohol_Served,social drinker
+132861,U1038,1,No_Alcohol_Served,social drinker
+132862,U1038,2,Wine-Beer,social drinker
+132862,U1071,2,Wine-Beer,abstemious
+135063,U1071,2,No_Alcohol_Served,abstemious
+135052,U1071,2,Full_Bar,abstemious
+135060,U1071,1,No_Alcohol_Served,abstemious
+135042,U1071,2,No_Alcohol_Served,abstemious
+132825,U1071,2,No_Alcohol_Served,abstemious
+132856,U1071,2,Wine-Beer,abstemious
+135032,U1071,2,Wine-Beer,abstemious
+132834,U1071,1,No_Alcohol_Served,abstemious
+135039,U1071,2,No_Alcohol_Served,abstemious
+135028,U1071,2,Wine-Beer,abstemious
+135025,U1071,2,No_Alcohol_Served,abstemious
+135030,U1071,2,No_Alcohol_Served,abstemious
+135053,U1114,0,No_Alcohol_Served,abstemious
+135058,U1084,1,No_Alcohol_Served,casual drinker
+132862,U1084,2,Wine-Beer,casual drinker
+135072,U1084,2,No_Alcohol_Served,casual drinker
+135030,U1084,2,No_Alcohol_Served,casual drinker
+135026,U1084,2,Full_Bar,casual drinker
+135035,U1084,2,No_Alcohol_Served,casual drinker
+135045,U1084,2,Wine-Beer,casual drinker
+132861,U1084,2,No_Alcohol_Served,casual drinker
+135085,U1084,2,No_Alcohol_Served,casual drinker
+132723,U1084,1,Full_Bar,casual drinker
+132825,U1049,0,No_Alcohol_Served,casual drinker
+135041,U1049,0,Wine-Beer,casual drinker
+132830,U1019,0,No_Alcohol_Served,casual drinker
+135076,U1019,0,Wine-Beer,casual drinker
+135038,U1019,0,No_Alcohol_Served,casual drinker
+132856,U1019,0,Wine-Beer,casual drinker
+135070,U1069,0,No_Alcohol_Served,social drinker
+135082,U1069,0,No_Alcohol_Served,social drinker
+135108,U1069,0,No_Alcohol_Served,social drinker
+132858,U1069,0,No_Alcohol_Served,social drinker
+135069,U1069,0,Wine-Beer,social drinker
+132846,U1069,0,No_Alcohol_Served,social drinker
+132845,U1069,0,No_Alcohol_Served,social drinker
+132851,U1069,1,No_Alcohol_Served,social drinker
+132847,U1069,0,No_Alcohol_Served,social drinker
+135038,U1113,1,No_Alcohol_Served,casual drinker
+135057,U1113,2,Wine-Beer,casual drinker
+135085,U1113,1,No_Alcohol_Served,casual drinker
+135032,U1113,0,Wine-Beer,casual drinker
+135079,U1113,1,No_Alcohol_Served,casual drinker
+135046,U1113,2,No_Alcohol_Served,casual drinker
+132856,U1113,0,Wine-Beer,casual drinker
+132854,U1113,0,Wine-Beer,casual drinker
+135039,U1104,0,No_Alcohol_Served,social drinker
+132825,U1104,1,No_Alcohol_Served,social drinker
+135085,U1104,2,No_Alcohol_Served,social drinker
+135030,U1104,2,No_Alcohol_Served,social drinker
+135062,U1104,1,No_Alcohol_Served,social drinker
+135047,U1106,0,Wine-Beer,casual drinker
+135052,U1106,0,Full_Bar,casual drinker
+132834,U1104,1,No_Alcohol_Served,social drinker
+135106,U1106,0,Wine-Beer,casual drinker
+132754,U1106,2,No_Alcohol_Served,casual drinker
+135052,U1104,1,Full_Bar,social drinker
+132856,U1106,0,Wine-Beer,casual drinker
+135032,U1104,2,Wine-Beer,social drinker
+135025,U1104,2,No_Alcohol_Served,social drinker
+132834,U1106,2,No_Alcohol_Served,casual drinker
+135047,U1104,1,Wine-Beer,social drinker
+135042,U1106,2,No_Alcohol_Served,casual drinker
+135039,U1106,2,No_Alcohol_Served,casual drinker
+132866,U1052,2,No_Alcohol_Served,social drinker
+135066,U1106,2,Wine-Beer,casual drinker
+135085,U1106,2,No_Alcohol_Served,casual drinker
+135033,U1104,1,No_Alcohol_Served,social drinker
+135062,U1106,2,No_Alcohol_Served,casual drinker
+132862,U1106,2,Wine-Beer,casual drinker
+135030,U1106,2,No_Alcohol_Served,casual drinker
+135079,U1106,2,No_Alcohol_Served,casual drinker
+135064,U1106,2,No_Alcohol_Served,casual drinker
+132869,U1052,2,No_Alcohol_Served,social drinker
+132870,U1052,1,No_Alcohol_Served,social drinker
+135041,U1104,1,Wine-Beer,social drinker
+134986,U1079,2,Wine-Beer,abstemious
+134976,U1079,1,No_Alcohol_Served,abstemious
+132768,U1079,2,No_Alcohol_Served,abstemious
+132766,U1079,1,Wine-Beer,abstemious
+132825,U1045,2,No_Alcohol_Served,casual drinker
+135064,U1045,0,No_Alcohol_Served,casual drinker
+132856,U1045,1,Wine-Beer,casual drinker
+135085,U1045,2,No_Alcohol_Served,casual drinker
+135032,U1045,0,Wine-Beer,casual drinker
+132834,U1045,1,No_Alcohol_Served,casual drinker
+135052,U1045,1,Full_Bar,casual drinker
+135060,U1045,2,No_Alcohol_Served,casual drinker
+135051,U1045,2,No_Alcohol_Served,casual drinker
+135041,U1045,1,Wine-Beer,casual drinker
+132754,U1009,1,No_Alcohol_Served,abstemious
+132862,U1009,2,Wine-Beer,abstemious
+135060,U1009,1,No_Alcohol_Served,abstemious
+135059,U1009,2,Wine-Beer,abstemious
+132834,U1009,2,No_Alcohol_Served,abstemious
+135058,U1009,1,No_Alcohol_Served,abstemious
+135038,U1009,2,No_Alcohol_Served,abstemious
+132825,U1009,1,No_Alcohol_Served,abstemious
+135052,U1009,2,Full_Bar,abstemious
+135063,U1009,0,No_Alcohol_Served,abstemious
+135079,U1009,1,No_Alcohol_Served,abstemious
+132834,U1016,2,No_Alcohol_Served,casual drinker
+135042,U1016,1,No_Alcohol_Served,casual drinker
+135032,U1016,2,Wine-Beer,casual drinker
+135106,U1016,2,Wine-Beer,casual drinker
+132856,U1016,2,Wine-Beer,casual drinker
+135045,U1016,2,Wine-Beer,casual drinker
+135060,U1016,2,No_Alcohol_Served,casual drinker
+135066,U1016,2,Wine-Beer,casual drinker
+135085,U1016,2,No_Alcohol_Served,casual drinker
+135052,U1016,2,Full_Bar,casual drinker
+132862,U1016,2,Wine-Beer,casual drinker
+135051,U1016,2,No_Alcohol_Served,casual drinker
+135062,U1016,2,No_Alcohol_Served,casual drinker
+132875,U1047,0,Wine-Beer,abstemious
+132877,U1047,0,No_Alcohol_Served,abstemious
+132884,U1047,0,No_Alcohol_Served,abstemious
+132872,U1095,1,No_Alcohol_Served,abstemious
+135034,U1095,2,No_Alcohol_Served,abstemious
+135058,U1095,1,No_Alcohol_Served,abstemious
+135086,U1034,1,No_Alcohol_Served,casual drinker
+132861,U1095,1,No_Alcohol_Served,abstemious
+135049,U1034,0,No_Alcohol_Served,casual drinker
+132723,U1034,1,Full_Bar,casual drinker
+132723,U1095,2,Full_Bar,abstemious
+135086,U1095,1,No_Alcohol_Served,abstemious
+135055,U1095,2,No_Alcohol_Served,abstemious
+135058,U1007,1,No_Alcohol_Served,casual drinker
+135085,U1007,1,No_Alcohol_Served,casual drinker
+135064,U1095,1,No_Alcohol_Served,abstemious
+135035,U1095,2,No_Alcohol_Served,abstemious
+135072,U1095,2,No_Alcohol_Served,abstemious
+135025,U1007,1,No_Alcohol_Served,casual drinker
+135032,U1007,1,Wine-Beer,casual drinker
+135086,U1007,0,No_Alcohol_Served,casual drinker
+132572,U1007,1,No_Alcohol_Served,casual drinker
+135038,U1007,1,No_Alcohol_Served,casual drinker
+132885,U1078,1,No_Alcohol_Served,social drinker
+135076,U1099,1,Wine-Beer,social drinker
+132834,U1099,2,No_Alcohol_Served,social drinker
+132866,U1008,1,No_Alcohol_Served,social drinker
+132858,U1008,1,No_Alcohol_Served,social drinker
+135043,U1099,2,No_Alcohol_Served,social drinker
+132885,U1099,0,No_Alcohol_Served,social drinker
+132854,U1008,2,Wine-Beer,social drinker
+132872,U1099,1,No_Alcohol_Served,social drinker
+135108,U1008,1,No_Alcohol_Served,social drinker
+132851,U1008,1,No_Alcohol_Served,social drinker
+132856,U1099,1,Wine-Beer,social drinker
+132869,U1008,1,No_Alcohol_Served,social drinker
+135066,U1099,1,Wine-Beer,social drinker
+135069,U1008,1,Wine-Beer,social drinker
+135038,U1099,0,No_Alcohol_Served,social drinker
+135060,U1099,2,No_Alcohol_Served,social drinker
+135045,U1099,1,Wine-Beer,social drinker
+132846,U1008,1,No_Alcohol_Served,social drinker
+135054,U1008,1,No_Alcohol_Served,social drinker
+135042,U1099,1,No_Alcohol_Served,social drinker
+132773,U1040,1,Wine-Beer,abstemious
+134999,U1040,1,No_Alcohol_Served,abstemious
+135013,U1040,2,No_Alcohol_Served,abstemious
+135019,U1040,1,No_Alcohol_Served,abstemious
+135021,U1121,0,No_Alcohol_Served,social drinker
+135021,U1110,1,No_Alcohol_Served,abstemious
+132767,U1110,2,Wine-Beer,abstemious
+135013,U1110,2,No_Alcohol_Served,abstemious
+134999,U1110,2,No_Alcohol_Served,abstemious
+135019,U1121,2,No_Alcohol_Served,social drinker
+132767,U1121,2,Wine-Beer,social drinker
+134999,U1121,2,No_Alcohol_Served,social drinker
+132768,U1042,2,No_Alcohol_Served,abstemious
+135021,U1042,1,No_Alcohol_Served,abstemious
+134996,U1042,2,Wine-Beer,abstemious
+135079,U1013,1,No_Alcohol_Served,abstemious
+135072,U1013,2,No_Alcohol_Served,abstemious
+135085,U1013,1,No_Alcohol_Served,abstemious
+135076,U1013,1,Wine-Beer,abstemious
+135062,U1054,2,No_Alcohol_Served,social drinker
+135060,U1054,2,No_Alcohol_Served,social drinker
+135039,U1054,2,No_Alcohol_Served,social drinker
+135052,U1054,2,Full_Bar,social drinker
+132856,U1054,2,Wine-Beer,social drinker
+135051,U1054,2,No_Alcohol_Served,social drinker
+135025,U1054,2,No_Alcohol_Served,social drinker
+135041,U1054,2,Wine-Beer,social drinker
+135038,U1054,2,No_Alcohol_Served,social drinker
+135032,U1054,1,Wine-Beer,social drinker
+135045,U1054,2,Wine-Beer,social drinker
+134986,U1042,2,Wine-Beer,abstemious
+134992,U1042,1,Wine-Beer,abstemious
+132845,U1111,2,No_Alcohol_Served,casual drinker
+135071,U1111,2,Full_Bar,casual drinker
+132858,U1111,1,No_Alcohol_Served,casual drinker
+132854,U1111,2,Wine-Beer,casual drinker
+132877,U1111,1,No_Alcohol_Served,casual drinker
+135071,U1037,1,Full_Bar,social drinker
+132851,U1111,2,No_Alcohol_Served,casual drinker
+135108,U1111,2,No_Alcohol_Served,casual drinker
+132869,U1111,0,No_Alcohol_Served,casual drinker
+132869,U1037,1,No_Alcohol_Served,social drinker
+132870,U1111,0,No_Alcohol_Served,casual drinker
+132851,U1037,2,No_Alcohol_Served,social drinker
+132847,U1111,0,No_Alcohol_Served,casual drinker
+135082,U1111,1,No_Alcohol_Served,casual drinker
+132854,U1037,1,Wine-Beer,social drinker
+132845,U1015,1,No_Alcohol_Served,social drinker
+132866,U1015,0,No_Alcohol_Served,social drinker
+132870,U1015,0,No_Alcohol_Served,social drinker
+135054,U1015,1,No_Alcohol_Served,social drinker
+132869,U1015,2,No_Alcohol_Served,social drinker
+132851,U1015,1,No_Alcohol_Served,social drinker
+132877,U1015,1,No_Alcohol_Served,social drinker
+132872,U1128,0,No_Alcohol_Served,casual drinker
+132872,U1062,0,No_Alcohol_Served,casual drinker
+135039,U1101,1,No_Alcohol_Served,casual drinker
+135027,U1101,2,Wine-Beer,casual drinker
+135073,U1101,1,Wine-Beer,casual drinker
+135106,U1101,0,Wine-Beer,casual drinker
+132856,U1101,1,Wine-Beer,casual drinker
+135032,U1101,2,Wine-Beer,casual drinker
+135038,U1101,2,No_Alcohol_Served,casual drinker
+135051,U1101,2,No_Alcohol_Served,casual drinker
+135052,U1101,2,Full_Bar,casual drinker
+135041,U1101,0,Wine-Beer,casual drinker
+135085,U1001,0,No_Alcohol_Served,abstemious
+135040,U1001,1,Wine-Beer,abstemious
+135039,U1001,1,No_Alcohol_Served,abstemious
+135045,U1001,1,Wine-Beer,abstemious
+135033,U1001,1,No_Alcohol_Served,abstemious
+135025,U1001,2,No_Alcohol_Served,abstemious
+135051,U1001,1,No_Alcohol_Served,abstemious
+135085,U1135,0,No_Alcohol_Served,casual drinker
+135106,U1135,0,Wine-Beer,casual drinker
+135052,U1135,0,Full_Bar,casual drinker
+135041,U1135,0,Wine-Beer,casual drinker
+132872,U1032,1,No_Alcohol_Served,abstemious
+135058,U1032,2,No_Alcohol_Served,abstemious
+135079,U1032,2,No_Alcohol_Served,abstemious
+135085,U1032,1,No_Alcohol_Served,abstemious
+135042,U1032,0,No_Alcohol_Served,abstemious
+132856,U1032,1,Wine-Beer,abstemious
+132825,U1135,0,No_Alcohol_Served,casual drinker
+132834,U1135,0,No_Alcohol_Served,casual drinker
+135038,U1032,1,No_Alcohol_Served,abstemious
+132834,U1032,1,No_Alcohol_Served,abstemious
+135060,U1032,1,No_Alcohol_Served,abstemious
+135058,U1135,0,No_Alcohol_Served,casual drinker
+135032,U1032,0,Wine-Beer,abstemious
+135063,U1135,0,No_Alcohol_Served,casual drinker
+132856,U1135,0,Wine-Beer,casual drinker
+135045,U1135,0,Wine-Beer,casual drinker
+135028,U1135,0,Wine-Beer,casual drinker
+135032,U1135,0,Wine-Beer,casual drinker
+135042,U1135,0,No_Alcohol_Served,casual drinker
+135060,U1135,0,No_Alcohol_Served,casual drinker
+135049,U1048,1,No_Alcohol_Served,casual drinker
+135026,U1048,2,Full_Bar,casual drinker
+135034,U1048,2,No_Alcohol_Served,casual drinker
+135048,U1048,0,Wine-Beer,casual drinker
+135065,U1048,2,Wine-Beer,casual drinker
+132755,U1048,2,No_Alcohol_Served,casual drinker
+132723,U1048,2,Full_Bar,casual drinker
+135085,U1062,0,No_Alcohol_Served,casual drinker
+135053,U1062,0,No_Alcohol_Served,casual drinker
+135071,U1092,1,Full_Bar,abstemious
+132825,U1062,0,No_Alcohol_Served,casual drinker
+135085,U1092,0,No_Alcohol_Served,abstemious
+135052,U1062,0,Full_Bar,casual drinker
+135046,U1092,0,No_Alcohol_Served,abstemious
+135062,U1062,0,No_Alcohol_Served,casual drinker
+132572,U1092,1,No_Alcohol_Served,abstemious
+135038,U1062,0,No_Alcohol_Served,casual drinker
+135045,U1062,0,Wine-Beer,casual drinker
+135025,U1092,2,No_Alcohol_Served,abstemious
+132834,U1062,0,No_Alcohol_Served,casual drinker
+132723,U1092,1,Full_Bar,abstemious
+134996,U1051,1,Wine-Beer,casual drinker
+132875,U1013,2,Wine-Beer,abstemious
+135043,U1085,2,No_Alcohol_Served,abstemious
+132885,U1085,0,No_Alcohol_Served,abstemious
+135050,U1085,2,Wine-Beer,abstemious
+135076,U1085,2,Wine-Beer,abstemious
+135081,U1085,2,No_Alcohol_Served,abstemious
+135028,U1109,2,Wine-Beer,abstemious
+132856,U1109,1,Wine-Beer,abstemious
+135042,U1085,0,No_Alcohol_Served,abstemious
+135059,U1085,2,Wine-Beer,abstemious
+132825,U1109,2,No_Alcohol_Served,abstemious
+132872,U1085,0,No_Alcohol_Served,abstemious
+135055,U1085,2,No_Alcohol_Served,abstemious
+135032,U1109,2,Wine-Beer,abstemious
+132825,U1085,2,No_Alcohol_Served,abstemious
+135063,U1109,2,No_Alcohol_Served,abstemious
+135042,U1109,2,No_Alcohol_Served,abstemious
+135058,U1109,2,No_Alcohol_Served,abstemious
+135085,U1109,2,No_Alcohol_Served,abstemious
+135038,U1109,2,No_Alcohol_Served,abstemious
+132872,U1109,1,No_Alcohol_Served,abstemious
+135081,U1078,1,No_Alcohol_Served,social drinker
+135060,U1078,2,No_Alcohol_Served,social drinker
+135106,U1078,2,Wine-Beer,social drinker
+135041,U1078,2,Wine-Beer,social drinker
+132834,U1078,0,No_Alcohol_Served,social drinker
+135052,U1078,2,Full_Bar,social drinker
+135079,U1019,0,No_Alcohol_Served,casual drinker
+132846,U1102,2,No_Alcohol_Served,social drinker
+132885,U1098,1,No_Alcohol_Served,social drinker
+135060,U1098,2,No_Alcohol_Served,social drinker
+132856,U1098,1,Wine-Beer,social drinker
+135026,U1046,1,Full_Bar,social drinker
+135066,U1122,2,Wine-Beer,abstemious
+135065,U1122,2,Wine-Beer,abstemious
+132872,U1122,2,No_Alcohol_Served,abstemious
+135058,U1122,2,No_Alcohol_Served,abstemious
+132834,U1122,2,No_Alcohol_Served,abstemious
+132754,U1122,2,No_Alcohol_Served,abstemious
+135079,U1122,2,No_Alcohol_Served,abstemious
+135038,U1122,2,No_Alcohol_Served,abstemious
+135085,U1122,2,No_Alcohol_Served,abstemious
+135030,U1122,2,No_Alcohol_Served,abstemious
+135064,U1122,1,No_Alcohol_Served,abstemious
+135053,U1122,2,No_Alcohol_Served,abstemious
+132921,U1138,2,Wine-Beer,social drinker
+132922,U1138,2,No_Alcohol_Served,social drinker
+132925,U1138,1,Wine-Beer,social drinker
+132921,U1013,2,Wine-Beer,abstemious
+135085,U1098,1,No_Alcohol_Served,social drinker
+132825,U1098,1,No_Alcohol_Served,social drinker
+135079,U1098,2,No_Alcohol_Served,social drinker
+135032,U1098,2,Wine-Beer,social drinker
+135038,U1098,1,No_Alcohol_Served,social drinker
+132861,U1098,2,No_Alcohol_Served,social drinker
+135046,U1098,1,No_Alcohol_Served,social drinker
+132862,U1098,1,Wine-Beer,social drinker
+132921,U1098,1,Wine-Beer,social drinker
+132884,U1034,0,No_Alcohol_Served,casual drinker
+135055,U1034,0,No_Alcohol_Served,casual drinker
+135035,U1034,1,No_Alcohol_Served,casual drinker
+135065,U1033,1,Wine-Beer,social drinker
+135028,U1033,2,Wine-Beer,social drinker
+135085,U1033,2,No_Alcohol_Served,social drinker
+135046,U1033,2,No_Alcohol_Served,social drinker
+135045,U1033,2,Wine-Beer,social drinker
+132951,U1033,2,No_Alcohol_Served,social drinker
+132572,U1033,1,No_Alcohol_Served,social drinker
+132921,U1033,2,Wine-Beer,social drinker
+135075,U1033,2,No_Alcohol_Served,social drinker
+135038,U1033,1,No_Alcohol_Served,social drinker
+135030,U1033,2,No_Alcohol_Served,social drinker
+135058,U1089,1,No_Alcohol_Served,casual drinker
+135064,U1089,1,No_Alcohol_Served,casual drinker
+135028,U1089,1,Wine-Beer,casual drinker
+132951,U1089,1,No_Alcohol_Served,casual drinker
+135064,U1003,0,No_Alcohol_Served,social drinker
+132921,U1089,1,Wine-Beer,casual drinker
+132825,U1003,2,No_Alcohol_Served,social drinker
+132754,U1089,1,No_Alcohol_Served,casual drinker
+135075,U1003,2,No_Alcohol_Served,social drinker
+135026,U1089,1,Full_Bar,casual drinker
+132862,U1003,1,Wine-Beer,social drinker
+132872,U1089,1,No_Alcohol_Served,casual drinker
+135085,U1089,1,No_Alcohol_Served,casual drinker
+135041,U1003,0,Wine-Beer,social drinker
+135072,U1089,1,No_Alcohol_Served,casual drinker
+132834,U1089,1,No_Alcohol_Served,casual drinker
+132937,U1003,2,Full_Bar,social drinker
+132875,U1089,1,Wine-Beer,casual drinker
+135038,U1089,0,No_Alcohol_Served,casual drinker
+132922,U1003,2,No_Alcohol_Served,social drinker
+132825,U1091,0,No_Alcohol_Served,casual drinker
+135075,U1091,2,No_Alcohol_Served,casual drinker
+135079,U1089,0,No_Alcohol_Served,casual drinker
+132723,U1003,2,Full_Bar,social drinker
+132861,U1091,1,No_Alcohol_Served,casual drinker
+132755,U1003,2,No_Alcohol_Served,social drinker
+132875,U1091,1,Wine-Beer,casual drinker
+135080,U1003,2,No_Alcohol_Served,social drinker
+135086,U1091,1,No_Alcohol_Served,casual drinker
+135079,U1003,2,No_Alcohol_Served,social drinker
+135066,U1027,0,Wine-Beer,social drinker
+135080,U1091,0,No_Alcohol_Served,casual drinker
+132921,U1027,1,Wine-Beer,social drinker
+132572,U1091,2,No_Alcohol_Served,casual drinker
+135052,U1027,1,Full_Bar,social drinker
+132884,U1091,2,No_Alcohol_Served,casual drinker
+135035,U1091,1,No_Alcohol_Served,casual drinker
+132937,U1027,1,Full_Bar,social drinker
+132951,U1027,1,No_Alcohol_Served,social drinker
+132925,U1027,1,Wine-Beer,social drinker
+132872,U1027,1,No_Alcohol_Served,social drinker
+132875,U1027,1,Wine-Beer,social drinker
+135085,U1027,1,No_Alcohol_Served,social drinker
+135042,U1027,1,No_Alcohol_Served,social drinker
+135062,U1027,1,No_Alcohol_Served,social drinker
+135047,U1029,1,Wine-Beer,casual drinker
+135059,U1029,2,Wine-Beer,casual drinker
+132937,U1029,1,Full_Bar,casual drinker
+135085,U1029,1,No_Alcohol_Served,casual drinker
+132834,U1029,0,No_Alcohol_Served,casual drinker
+132754,U1029,0,No_Alcohol_Served,casual drinker
+132825,U1029,1,No_Alcohol_Served,casual drinker
+132921,U1029,1,Wine-Beer,casual drinker
+132862,U1029,1,Wine-Beer,casual drinker
+132922,U1029,1,No_Alcohol_Served,casual drinker
+135063,U1086,1,No_Alcohol_Served,social drinker
+132921,U1086,1,Wine-Beer,social drinker
+135085,U1086,2,No_Alcohol_Served,social drinker
+132922,U1086,2,No_Alcohol_Served,social drinker
+132937,U1086,2,Full_Bar,social drinker
+135045,U1086,2,Wine-Beer,social drinker
+135041,U1086,2,Wine-Beer,social drinker
+135060,U1086,1,No_Alcohol_Served,social drinker
+132951,U1086,1,No_Alcohol_Served,social drinker
+132921,U1019,0,Wine-Beer,casual drinker
+132834,U1019,0,No_Alcohol_Served,casual drinker
+132951,U1137,2,No_Alcohol_Served,social drinker
+135062,U1019,0,No_Alcohol_Served,casual drinker
+135086,U1019,0,No_Alcohol_Served,casual drinker
+135085,U1137,2,No_Alcohol_Served,social drinker
+132834,U1137,2,No_Alcohol_Served,social drinker
+132572,U1090,1,No_Alcohol_Served,social drinker
+132862,U1137,2,Wine-Beer,social drinker
+135058,U1137,0,No_Alcohol_Served,social drinker
+135059,U1137,2,Wine-Beer,social drinker
+135062,U1137,2,No_Alcohol_Served,social drinker
+132825,U1137,2,No_Alcohol_Served,social drinker
+132723,U1137,2,Full_Bar,social drinker
+132755,U1137,2,No_Alcohol_Served,social drinker
+135042,U1137,2,No_Alcohol_Served,social drinker
+132884,U1137,2,No_Alcohol_Served,social drinker
+135049,U1137,2,No_Alcohol_Served,social drinker
+135075,U1137,2,No_Alcohol_Served,social drinker
+132825,U1114,0,No_Alcohol_Served,abstemious
+135065,U1114,0,Wine-Beer,abstemious
+135058,U1114,0,No_Alcohol_Served,abstemious
+132723,U1114,0,Full_Bar,abstemious
+132951,U1114,0,No_Alcohol_Served,abstemious
+132872,U1114,1,No_Alcohol_Served,abstemious
+132834,U1114,0,No_Alcohol_Served,abstemious
+135072,U1114,0,No_Alcohol_Served,abstemious
+132754,U1114,0,No_Alcohol_Served,abstemious
+132755,U1114,1,No_Alcohol_Served,abstemious
+132825,U1061,1,No_Alcohol_Served,social drinker
+135048,U1061,2,Wine-Beer,social drinker
+132921,U1061,1,Wine-Beer,social drinker
+135026,U1061,2,Full_Bar,social drinker
+132723,U1061,2,Full_Bar,social drinker
+135075,U1061,2,No_Alcohol_Served,social drinker
+135034,U1061,2,No_Alcohol_Served,social drinker
+135041,U1061,2,Wine-Beer,social drinker
+132572,U1013,1,No_Alcohol_Served,abstemious
+135075,U1013,2,No_Alcohol_Served,abstemious
+135046,U1061,1,No_Alcohol_Served,social drinker
+132572,U1061,1,No_Alcohol_Served,social drinker
+135058,U1061,1,No_Alcohol_Served,social drinker
+135044,U1046,1,No_Alcohol_Served,social drinker
+135065,U1046,2,Wine-Beer,social drinker
+132921,U1046,2,Wine-Beer,social drinker
+135085,U1046,1,No_Alcohol_Served,social drinker
+132572,U1046,1,No_Alcohol_Served,social drinker
+135058,U1046,2,No_Alcohol_Served,social drinker
+132951,U1046,1,No_Alcohol_Served,social drinker
+132861,U1046,1,No_Alcohol_Served,social drinker
+135001,U1041,1,Wine-Beer,abstemious
+134983,U1041,2,Full_Bar,abstemious
+135021,U1041,2,No_Alcohol_Served,abstemious
+134992,U1041,2,Wine-Beer,abstemious
+132768,U1041,2,No_Alcohol_Served,abstemious
+135109,U1041,1,Wine-Beer,abstemious
+132954,U1004,2,No_Alcohol_Served,abstemious
+132955,U1004,2,Wine-Beer,abstemious
+132958,U1004,2,No_Alcohol_Served,abstemious
+132754,U1003,2,No_Alcohol_Served,social drinker
+135064,U1059,1,No_Alcohol_Served,abstemious
+135075,U1059,2,No_Alcohol_Served,abstemious
+135028,U1059,1,Wine-Beer,abstemious
+132834,U1061,1,No_Alcohol_Served,social drinker
+135086,U1061,1,No_Alcohol_Served,social drinker
+132754,U1061,2,No_Alcohol_Served,social drinker
+135080,U1061,2,No_Alcohol_Served,social drinker
+135062,U1090,2,No_Alcohol_Served,social drinker
+135052,U1090,2,Full_Bar,social drinker
+135047,U1112,0,Wine-Beer,casual drinker
+135026,U1112,1,Full_Bar,casual drinker
+135064,U1112,0,No_Alcohol_Served,casual drinker
+132862,U1090,2,Wine-Beer,social drinker
+135070,U1057,1,No_Alcohol_Served,casual drinker
+132954,U1112,0,No_Alcohol_Served,casual drinker
+135043,U1057,1,No_Alcohol_Served,casual drinker
+135079,U1112,1,No_Alcohol_Served,casual drinker
+135062,U1112,0,No_Alcohol_Served,casual drinker
+135051,U1090,1,No_Alcohol_Served,social drinker
+132954,U1090,2,No_Alcohol_Served,social drinker
+135048,U1112,0,Wine-Beer,casual drinker
+132954,U1057,1,No_Alcohol_Served,casual drinker
+135086,U1112,0,No_Alcohol_Served,casual drinker
+132955,U1061,2,Wine-Beer,social drinker
+132921,U1112,1,Wine-Beer,casual drinker
+132958,U1061,2,No_Alcohol_Served,social drinker
+135046,U1112,0,No_Alcohol_Served,casual drinker
+135085,U1090,2,No_Alcohol_Served,social drinker
+132572,U1112,0,No_Alcohol_Served,casual drinker
+132922,U1090,2,No_Alcohol_Served,social drinker
+132866,U1025,2,No_Alcohol_Served,social drinker
+135080,U1057,1,No_Alcohol_Served,casual drinker
+132834,U1112,1,No_Alcohol_Served,casual drinker
+132825,U1057,1,No_Alcohol_Served,casual drinker
+132862,U1112,1,Wine-Beer,casual drinker
+132954,U1061,2,No_Alcohol_Served,social drinker
+132877,U1025,1,No_Alcohol_Served,social drinker
+135064,U1057,1,No_Alcohol_Served,casual drinker
+135046,U1057,1,No_Alcohol_Served,casual drinker
+135025,U1090,2,No_Alcohol_Served,social drinker
+132925,U1090,2,Wine-Beer,social drinker
+132862,U1057,1,Wine-Beer,casual drinker
+135075,U1057,0,No_Alcohol_Served,casual drinker
+132847,U1025,2,No_Alcohol_Served,social drinker
+135030,U1057,1,No_Alcohol_Served,casual drinker
+135071,U1025,2,Full_Bar,social drinker
+132834,U1057,1,No_Alcohol_Served,casual drinker
+132958,U1025,1,No_Alcohol_Served,social drinker
+132825,U1025,0,No_Alcohol_Served,social drinker
+135028,U1025,2,Wine-Beer,social drinker
+135047,U1025,1,Wine-Beer,social drinker
+132846,U1025,2,No_Alcohol_Served,social drinker
+135064,U1025,2,No_Alcohol_Served,social drinker
+132830,U1025,2,No_Alcohol_Served,social drinker
+135079,U1097,2,No_Alcohol_Served,abstemious
+135058,U1097,2,No_Alcohol_Served,abstemious
+132954,U1097,1,No_Alcohol_Served,abstemious
+132958,U1097,2,No_Alcohol_Served,abstemious
+135026,U1097,1,Full_Bar,abstemious
+132955,U1059,2,Wine-Beer,abstemious
+135044,U1059,2,No_Alcohol_Served,abstemious
+132862,U1059,0,Wine-Beer,abstemious
+135085,U1059,2,No_Alcohol_Served,abstemious
+135030,U1059,2,No_Alcohol_Served,abstemious
+135053,U1128,0,No_Alcohol_Served,casual drinker
+132825,U1059,2,No_Alcohol_Served,abstemious
+132754,U1059,2,No_Alcohol_Served,abstemious
+135058,U1128,0,No_Alcohol_Served,casual drinker
+132875,U1128,0,Wine-Beer,casual drinker
+135079,U1128,0,No_Alcohol_Served,casual drinker
+132925,U1128,0,Wine-Beer,casual drinker
+135064,U1128,0,No_Alcohol_Served,casual drinker
+132921,U1128,0,Wine-Beer,casual drinker
+135060,U1128,0,No_Alcohol_Served,casual drinker
+132954,U1128,0,No_Alcohol_Served,casual drinker
+132951,U1128,0,No_Alcohol_Served,casual drinker
+132921,U1097,2,Wine-Beer,abstemious
+132955,U1097,2,Wine-Beer,abstemious
+132884,U1097,1,No_Alcohol_Served,abstemious
+135049,U1097,2,No_Alcohol_Served,abstemious
+135034,U1097,2,No_Alcohol_Served,abstemious
+132954,U1006,1,No_Alcohol_Served,social drinker
+135079,U1006,1,No_Alcohol_Served,social drinker
+132875,U1006,2,Wine-Beer,social drinker
+135026,U1006,2,Full_Bar,social drinker
+132922,U1006,2,No_Alcohol_Served,social drinker
+132572,U1006,1,No_Alcohol_Served,social drinker
+135075,U1006,1,No_Alcohol_Served,social drinker
+132825,U1006,1,No_Alcohol_Served,social drinker
+135048,U1006,1,Wine-Beer,social drinker
+135030,U1006,1,No_Alcohol_Served,social drinker
+132884,U1006,2,No_Alcohol_Served,social drinker
+135054,U1131,2,No_Alcohol_Served,social drinker
+132869,U1131,1,No_Alcohol_Served,social drinker
+132866,U1131,2,No_Alcohol_Served,social drinker
+135082,U1131,0,No_Alcohol_Served,social drinker
+132851,U1131,2,No_Alcohol_Served,social drinker
+132870,U1131,0,No_Alcohol_Served,social drinker
+135062,U1073,0,No_Alcohol_Served,abstemious
+132572,U1073,0,No_Alcohol_Served,abstemious
+135064,U1073,0,No_Alcohol_Served,abstemious
+135080,U1073,0,No_Alcohol_Served,abstemious
+132951,U1073,0,No_Alcohol_Served,abstemious
+132954,U1073,0,No_Alcohol_Served,abstemious
+135052,U1073,0,Full_Bar,abstemious
+132834,U1073,0,No_Alcohol_Served,abstemious
+135060,U1073,0,No_Alcohol_Served,abstemious
+135065,U1073,0,Wine-Beer,abstemious
+132862,U1073,0,Wine-Beer,abstemious
+132921,U1049,0,Wine-Beer,casual drinker
+135042,U1049,0,No_Alcohol_Served,casual drinker
+135032,U1049,0,Wine-Beer,casual drinker
+135051,U1049,0,No_Alcohol_Served,casual drinker
+135085,U1049,0,No_Alcohol_Served,casual drinker
+132862,U1049,0,Wine-Beer,casual drinker
+135052,U1049,0,Full_Bar,casual drinker
+135076,U1058,2,Wine-Beer,abstemious
+135043,U1058,1,No_Alcohol_Served,abstemious
+135058,U1058,2,No_Alcohol_Served,abstemious
+135053,U1058,2,No_Alcohol_Served,abstemious
+132885,U1058,1,No_Alcohol_Served,abstemious
+135050,U1058,1,Wine-Beer,abstemious
+132872,U1058,2,No_Alcohol_Served,abstemious
+135066,U1058,1,Wine-Beer,abstemious
+132921,U1002,2,Wine-Beer,abstemious
+135062,U1002,1,No_Alcohol_Served,abstemious
+135106,U1002,1,Wine-Beer,abstemious
+132825,U1002,2,No_Alcohol_Served,abstemious
+135052,U1002,1,Full_Bar,abstemious
+132862,U1002,2,Wine-Beer,abstemious
+132875,U1096,2,Wine-Beer,abstemious
+135059,U1002,1,Wine-Beer,abstemious
+135041,U1002,2,Wine-Beer,abstemious
+132925,U1002,1,Wine-Beer,abstemious
+135085,U1002,1,No_Alcohol_Served,abstemious
+135025,U1096,2,No_Alcohol_Served,abstemious
+135072,U1096,1,No_Alcohol_Served,abstemious
+135064,U1096,1,No_Alcohol_Served,abstemious
+135086,U1096,1,No_Alcohol_Served,abstemious
+135055,U1096,2,No_Alcohol_Served,abstemious
+135074,U1136,1,Wine-Beer,social drinker
+135026,U1096,2,Full_Bar,abstemious
+132862,U1136,2,Wine-Beer,social drinker
+132955,U1096,2,Wine-Beer,abstemious
+132921,U1136,2,Wine-Beer,social drinker
+135072,U1136,1,No_Alcohol_Served,social drinker
+132723,U1096,1,Full_Bar,abstemious
+135055,U1136,2,No_Alcohol_Served,social drinker
+135064,U1136,1,No_Alcohol_Served,social drinker
+132958,U1096,1,No_Alcohol_Served,abstemious
+135075,U1096,1,No_Alcohol_Served,abstemious
+132958,U1136,2,No_Alcohol_Served,social drinker
+135048,U1136,1,Wine-Beer,social drinker
+135046,U1136,2,No_Alcohol_Served,social drinker
+135028,U1136,2,Wine-Beer,social drinker
+135086,U1097,2,No_Alcohol_Served,abstemious
+135053,U1097,2,No_Alcohol_Served,abstemious
+132861,U1097,2,No_Alcohol_Served,abstemious
+135062,U1058,2,No_Alcohol_Served,abstemious
+135055,U1058,2,No_Alcohol_Served,abstemious
+135053,U1010,1,No_Alcohol_Served,social drinker
+135058,U1010,1,No_Alcohol_Served,social drinker
+135079,U1010,0,No_Alcohol_Served,social drinker
+135059,U1003,2,Wine-Beer,social drinker
+135064,U1010,0,No_Alcohol_Served,social drinker
+135047,U1010,1,Wine-Beer,social drinker
+135065,U1010,1,Wine-Beer,social drinker
+132854,U1102,2,Wine-Beer,social drinker
+132858,U1102,2,No_Alcohol_Served,social drinker
+135042,U1010,2,No_Alcohol_Served,social drinker
+132870,U1102,2,No_Alcohol_Served,social drinker
+135076,U1010,1,Wine-Beer,social drinker
+132847,U1102,2,No_Alcohol_Served,social drinker
+132951,U1013,2,No_Alcohol_Served,abstemious
+135060,U1013,1,No_Alcohol_Served,abstemious
+132732,U1028,1,No_Alcohol_Served,abstemious
+132733,U1028,1,No_Alcohol_Served,abstemious
+135104,U1028,0,Full_Bar,abstemious
+132732,U1050,0,No_Alcohol_Served,social drinker
+132609,U1050,0,No_Alcohol_Served,social drinker
+132608,U1050,0,No_Alcohol_Served,social drinker
+132560,U1050,0,No_Alcohol_Served,social drinker
+132740,U1050,0,No_Alcohol_Served,social drinker
+132594,U1050,0,No_Alcohol_Served,social drinker
+132584,U1050,0,No_Alcohol_Served,social drinker
+132740,U1028,1,No_Alcohol_Served,abstemious
+132706,U1129,0,No_Alcohol_Served,casual drinker
+132654,U1129,0,No_Alcohol_Served,casual drinker
+132630,U1028,2,No_Alcohol_Served,abstemious
+132663,U1028,0,No_Alcohol_Served,abstemious
+132613,U1028,2,No_Alcohol_Served,abstemious
+132667,U1087,2,No_Alcohol_Served,abstemious
+135104,U1087,1,Full_Bar,abstemious
+132660,U1087,1,No_Alcohol_Served,abstemious
+132732,U1087,2,No_Alcohol_Served,abstemious
+132740,U1087,1,No_Alcohol_Served,abstemious
+132560,U1087,1,No_Alcohol_Served,abstemious
+132594,U1087,1,No_Alcohol_Served,abstemious
+132663,U1087,1,No_Alcohol_Served,abstemious
+132626,U1065,1,No_Alcohol_Served,abstemious
+132706,U1065,2,No_Alcohol_Served,abstemious
+132561,U1129,1,No_Alcohol_Served,casual drinker
+132665,U1065,1,No_Alcohol_Served,abstemious
+132665,U1129,0,No_Alcohol_Served,casual drinker
+132561,U1065,1,No_Alcohol_Served,abstemious
+132626,U1039,2,No_Alcohol_Served,social drinker
+132564,U1039,1,No_Alcohol_Served,social drinker
+132654,U1065,1,No_Alcohol_Served,abstemious
+132665,U1039,1,No_Alcohol_Served,social drinker
+132654,U1130,0,No_Alcohol_Served,abstemious
+132561,U1130,0,No_Alcohol_Served,abstemious
+132626,U1130,0,No_Alcohol_Served,abstemious
+132706,U1130,1,No_Alcohol_Served,abstemious
+132608,U1043,1,No_Alcohol_Served,abstemious
+132609,U1043,1,No_Alcohol_Served,abstemious
+132717,U1011,2,No_Alcohol_Served,abstemious
+132613,U1043,1,No_Alcohol_Served,abstemious
+132564,U1011,1,No_Alcohol_Served,abstemious
+132732,U1043,1,No_Alcohol_Served,abstemious
+132630,U1043,1,No_Alcohol_Served,abstemious
+132715,U1011,1,No_Alcohol_Served,abstemious
+132733,U1068,1,No_Alcohol_Served,casual drinker
+132594,U1068,1,No_Alcohol_Served,casual drinker
+132660,U1068,0,No_Alcohol_Served,casual drinker
