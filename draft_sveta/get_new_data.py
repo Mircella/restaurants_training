@@ -73,3 +73,4 @@ write_df_to_csv('no_similiar_categories', 'restaurant_parking.csv', r_parking)
 write_df_to_csv('no_similiar_categories', 'restaurant_payment.csv', r_payment)
 
 #test = df_r.groupby('placeID')['rating'].mean() - for mean
+#rating_pivot = pd.pivot_table(ratings, values = ['rating', 'food_rating', 'service_rating'], index = 'placeID', aggfunc = 'mean')
