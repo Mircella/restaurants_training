@@ -8,7 +8,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from math import isnan
 from sklearn.ensemble import RandomForestClassifier
-
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.linear_model import LinearRegression
 
 def take(n, iterable):
     return list(islice(iterable, n))
@@ -75,3 +76,22 @@ def calculate_selected_features_prediction_accuracy_with_random_forest_classifie
     accuracy = accuracy_score(y_test, y_predictions)
 
     return accuracy
+
+
+def calculate_selected_features_prediction_accuracy_with_random_forest_regression(X_train, y_train, X_test, y_test):
+    # max_features(default 'auto') - number of features to consider when looking for the best split
+    random_forest_regressor = RandomForestRegressor(n_estimators=100, criterion='mse', random_state=0)
+    random_forest_regressor.fit(X_train, y_train)
+    y_prediction = random_forest_regressor.predict(X_test)
+
+    return y_prediction
+
+def calculate_selected_features_prediction_accuracy_with_multiple_linear_regression(X_train, y_train, X_test, y_test):
+    # max_features(default 'auto') - number of features to consider when looking for the best split
+    regressor = LinearRegression()
+    regressor.fit(X_train, y_train)
+
+    # Predicting the Test set results
+    y_pred = regressor.predict(X_test)
+
+    return y_pred

@@ -13,6 +13,11 @@ user_cuisine_types = pd.read_csv('../data/usercuisine.csv', delimiter =';')
 user_profiles = pd.read_csv('../data/userprofile.csv', delimiter =';')
 user_ratings = pd.read_csv('../data/rating_final.csv', delimiter =';')
 
+# here I also save clean user data frames with default delimiter=','
+write_df_to_csv('../clean_data', 'user_payment_types.csv', user_payment_types)
+write_df_to_csv('../clean_data', 'user_cuisine_types.csv', user_cuisine_types)
+write_df_to_csv('../clean_data', 'user_profiles.csv', user_profiles)
+
 # Extracting how many payments types users used in restaurants
 print(f"Number of unique users with payment type specified:{len(user_payment_types['userID'].unique())}")
 print(f"Number of users payment types:{len(user_payment_types['Upayment'].unique())}")

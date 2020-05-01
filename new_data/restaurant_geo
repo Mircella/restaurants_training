@@ -1,0 +1,131 @@
+placeID,alcohol,smoking_area,dress_code,accessibility,price,Rambience,area,other_services
+134999,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132825,no_alcohol_served,not permitted,informal,completely,low,familiar,open,none
+135106,wine-beer,permitted,informal,partially,medium,familiar,open,none
+132667,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132613,no_alcohol_served,permitted,informal,completely,medium,familiar,closed,none
+135040,wine-beer,not permitted,informal,no_accessibility,high,familiar,closed,none
+132732,no_alcohol_served,not permitted,informal,completely,low,familiar,open,none
+132875,wine-beer,permitted,informal,no_accessibility,high,familiar,open,internet
+132609,no_alcohol_served,not permitted,informal,completely,low,quiet,closed,none
+135082,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135070,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135069,wine-beer,not permitted,informal,no_accessibility,low,familiar,closed,none
+135065,wine-beer,permitted,informal,no_accessibility,high,familiar,closed,none
+135076,wine-beer,not permitted,informal,no_accessibility,high,familiar,closed,none
+135086,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132870,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,closed,none
+132854,wine-beer,not permitted,informal,completely,medium,familiar,closed,none
+132937,full_bar,permitted,informal,completely,low,quiet,closed,variety
+132856,wine-beer,not permitted,informal,completely,low,familiar,closed,none
+132668,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135033,no_alcohol_served,permitted,informal,no_accessibility,medium,familiar,closed,none
+132862,wine-beer,not permitted,informal,completely,high,familiar,closed,none
+134983,full_bar,permitted,informal,no_accessibility,high,familiar,closed,none
+132851,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135013,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,closed,none
+135042,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132768,no_alcohol_served,not permitted,informal,partially,medium,familiar,closed,none
+132561,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135045,wine-beer,not permitted,informal,no_accessibility,high,familiar,closed,none
+132847,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,open,none
+135054,no_alcohol_served,not permitted,informal,no_accessibility,high,familiar,closed,none
+134975,full_bar,permitted,informal,completely,high,familiar,closed,variety
+135053,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,closed,none
+135050,wine-beer,not permitted,informal,no_accessibility,high,familiar,closed,none
+135025,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135030,no_alcohol_served,not permitted,informal,no_accessibility,medium,quiet,closed,internet
+135057,wine-beer,permitted,informal,no_accessibility,medium,familiar,closed,none
+135079,no_alcohol_served,not permitted,informal,no_accessibility,high,familiar,closed,none
+134992,wine-beer,permitted,informal,no_accessibility,high,familiar,closed,none
+132954,no_alcohol_served,not permitted,informal,partially,medium,familiar,closed,none
+135041,wine-beer,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132608,no_alcohol_served,permitted,informal,completely,low,quiet,open,none
+135046,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132564,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132869,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132925,wine-beer,not permitted,informal,completely,medium,familiar,closed,none
+132955,wine-beer,not permitted,informal,completely,low,familiar,closed,variety
+135059,wine-beer,permitted,informal,no_accessibility,medium,familiar,closed,none
+135001,wine-beer,not permitted,informal,completely,medium,familiar,closed,none
+135063,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135080,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,closed,none
+135000,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135066,wine-beer,permitted,informal,no_accessibility,high,familiar,closed,none
+135034,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135060,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135055,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,closed,none
+135108,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135074,wine-beer,permitted,informal,no_accessibility,high,familiar,closed,none
+135018,full_bar,permitted,informal,completely,medium,familiar,open,variety
+135064,no_alcohol_served,not permitted,informal,no_accessibility,high,familiar,closed,none
+135038,no_alcohol_served,permitted,informal,no_accessibility,medium,familiar,closed,none
+135081,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132723,full_bar,permitted,informal,completely,medium,familiar,closed,none
+135051,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,closed,none
+135021,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,closed,none
+135052,full_bar,not permitted,informal,no_accessibility,high,familiar,closed,none
+132845,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135011,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132858,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135026,full_bar,not permitted,informal,no_accessibility,high,familiar,closed,none
+132884,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135016,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135104,full_bar,not permitted,informal,completely,medium,familiar,closed,variety
+132630,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135047,wine-beer,permitted,informal,no_accessibility,high,familiar,closed,none
+132951,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132665,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135044,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135035,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,closed,none
+135071,full_bar,permitted,informal,no_accessibility,medium,familiar,closed,none
+132834,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,closed,none
+132846,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,open,none
+135048,wine-beer,not permitted,informal,no_accessibility,high,familiar,closed,none
+132717,no_alcohol_served,not permitted,informal,partially,medium,familiar,closed,none
+132861,no_alcohol_served,not permitted,informal,completely,medium,familiar,closed,none
+132885,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132740,no_alcohol_served,permitted,informal,completely,low,familiar,open,none
+132830,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132773,wine-beer,permitted,informal,no_accessibility,low,familiar,open,none
+132706,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132872,no_alcohol_served,not permitted,informal,partially,medium,familiar,closed,none
+134987,wine-beer,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132572,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132958,no_alcohol_served,not permitted,informal,completely,low,quiet,closed,none
+132733,no_alcohol_served,not permitted,informal,completely,medium,familiar,closed,none
+132922,no_alcohol_served,permitted,formal,completely,medium,familiar,closed,none
+132715,no_alcohol_served,not permitted,informal,no_accessibility,low,quiet,open,none
+135027,wine-beer,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132767,wine-beer,permitted,informal,partially,medium,familiar,open,variety
+135039,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,closed,none
+134996,wine-beer,permitted,informal,no_accessibility,medium,familiar,closed,internet
+132755,no_alcohol_served,not permitted,informal,partially,medium,familiar,closed,variety
+135043,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132654,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+135049,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135073,wine-beer,permitted,informal,no_accessibility,high,familiar,closed,none
+132560,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,open,none
+134976,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,closed,none
+135075,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132660,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132921,wine-beer,permitted,informal,completely,low,quiet,open,none
+132594,no_alcohol_served,not permitted,informal,completely,low,familiar,open,none
+134986,wine-beer,not permitted,formal,no_accessibility,high,familiar,closed,none
+135062,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132766,wine-beer,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135088,no_alcohol_served,not permitted,informal,no_accessibility,low,quiet,closed,none
+135058,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132754,no_alcohol_served,not permitted,informal,partially,medium,familiar,closed,none
+132584,no_alcohol_served,not permitted,informal,completely,medium,familiar,closed,none
+135032,wine-beer,permitted,informal,no_accessibility,medium,familiar,closed,none
+135028,wine-beer,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135085,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+132663,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132626,no_alcohol_served,not permitted,informal,completely,medium,familiar,closed,none
+132583,no_alcohol_served,not permitted,informal,partially,low,familiar,closed,none
+132866,no_alcohol_served,not permitted,informal,completely,medium,familiar,closed,none
+135072,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,closed,none
+135109,wine-beer,not permitted,informal,no_accessibility,medium,quiet,closed,internet
+135019,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
+132877,no_alcohol_served,not permitted,informal,completely,low,familiar,closed,none
