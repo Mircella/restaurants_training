@@ -1,0 +1,131 @@
+placeID,city,state,alcohol,smoking_area,dress_code,accessibility,price,Rambience,franchise,area,other_services
+134999,cuernavaca,morelos,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132825,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,low,familiar,f,open,none
+135106,san luis potosi,san luis potosi,wine-beer,permitted,informal,partially,medium,familiar,f,open,none
+132667,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,t,closed,none
+132613,ciudad victoria,tamaulipas,no_alcohol_served,permitted,informal,completely,medium,familiar,t,closed,none
+135040,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+132732,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,f,open,none
+132875,Nan,Nan,wine-beer,permitted,informal,no_accessibility,high,familiar,t,open,internet
+132609,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,quiet,t,closed,none
+135082,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135070,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135069,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,low,familiar,f,closed,none
+135065,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,high,familiar,f,closed,none
+135076,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+135086,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,t,closed,none
+132870,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,f,closed,none
+132854,san luis potosi,san luis potosi,wine-beer,not permitted,informal,completely,medium,familiar,f,closed,none
+132937,san luis potosi,san luis potosi,full_bar,permitted,informal,completely,low,quiet,f,closed,variety
+132856,san luis potosi,san luis potosi,wine-beer,not permitted,informal,completely,low,familiar,f,closed,none
+132668,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135033,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132862,san luis potosi,san luis potosi,wine-beer,not permitted,informal,completely,high,familiar,f,closed,none
+134983,cuernavaca,morelos,full_bar,permitted,informal,no_accessibility,high,familiar,f,closed,none
+132851,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135013,jiutepec,morelos,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,f,closed,none
+135042,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132768,cuernavaca,morelos,no_alcohol_served,not permitted,informal,partially,medium,familiar,t,closed,none
+132561,Nan,Nan,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135045,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+132847,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,f,open,none
+135054,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+134975,Nan,Nan,full_bar,permitted,informal,completely,high,familiar,f,closed,variety
+135053,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,f,closed,none
+135050,soledad,san luis potosi,wine-beer,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+135025,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135030,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,quiet,f,closed,internet
+135057,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135079,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+134992,cuernavaca,morelos,wine-beer,permitted,informal,no_accessibility,high,familiar,f,closed,none
+132954,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,partially,medium,familiar,t,closed,none
+135041,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132608,ciudad victoria,tamaulipas,no_alcohol_served,permitted,informal,completely,low,quiet,t,open,none
+135046,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132564,Nan,Nan,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132869,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132925,Nan,Nan,wine-beer,not permitted,informal,completely,medium,familiar,f,closed,none
+132955,san luis potosi,mexico,wine-beer,not permitted,informal,completely,low,familiar,t,closed,variety
+135059,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135001,cuernavaca,morelos,wine-beer,not permitted,informal,completely,medium,familiar,t,closed,none
+135063,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135080,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,f,closed,none
+135000,cuernavaca,morelos,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135066,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,high,familiar,f,closed,none
+135034,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135060,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135055,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,f,closed,none
+135108,san luis potosi,Nan,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135074,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,high,familiar,f,closed,none
+135018,cuernavaca,morelos,full_bar,permitted,informal,completely,medium,familiar,f,open,variety
+135064,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+135038,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135081,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132723,Nan,san luis potosi,full_bar,permitted,informal,completely,medium,familiar,f,closed,none
+135051,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,f,closed,none
+135021,cuernavaca,morelos,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,t,closed,none
+135052,san luis potosi,san luis potosi,full_bar,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+132845,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135011,jiutepec,morelos,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,t,closed,none
+132858,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135026,san luis potosi,san luis potosi,full_bar,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+132884,Nan,Nan,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135016,cuernavaca,morelos,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135104,Nan,Nan,full_bar,not permitted,informal,completely,medium,familiar,t,closed,variety
+132630,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135047,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,high,familiar,f,closed,none
+132951,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132665,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135044,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135035,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,high,familiar,f,closed,none
+135071,san luis potosi,san luis potosi,full_bar,permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132834,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,f,closed,none
+132846,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,f,open,none
+135048,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,high,familiar,f,closed,none
+132717,Nan,Nan,no_alcohol_served,not permitted,informal,partially,medium,familiar,f,closed,none
+132861,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,medium,familiar,t,closed,none
+132885,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132740,ciudad victoria,tamaulipas,no_alcohol_served,permitted,informal,completely,low,familiar,f,open,none
+132830,Nan,Nan,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132773,cuernavaca,morelos,wine-beer,permitted,informal,no_accessibility,low,familiar,f,open,none
+132706,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,t,closed,none
+132872,san luis potosi,mexico,no_alcohol_served,not permitted,informal,partially,medium,familiar,f,closed,none
+134987,cuernavaca,morelos,wine-beer,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132572,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132958,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,low,quiet,t,closed,none
+132733,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,medium,familiar,t,closed,none
+132922,Nan,Nan,no_alcohol_served,permitted,formal,completely,medium,familiar,f,closed,none
+132715,Nan,Nan,no_alcohol_served,not permitted,informal,no_accessibility,low,quiet,f,open,none
+135027,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132767,jiutepec,morelos,wine-beer,permitted,informal,partially,medium,familiar,f,open,variety
+135039,san luis potosi,san luis potosi,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,f,closed,none
+134996,cuernavaca,morelos,wine-beer,permitted,informal,no_accessibility,medium,familiar,t,closed,internet
+132755,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,partially,medium,familiar,f,closed,variety
+135043,soledad,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132654,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+135049,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135073,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,high,familiar,f,closed,none
+132560,ciudad victoria,tamaulipas,no_alcohol_served,permitted,informal,no_accessibility,low,familiar,f,open,none
+134976,Nan,Nan,no_alcohol_served,not permitted,informal,no_accessibility,low,familiar,f,closed,none
+135075,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132660,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132921,Nan,Nan,wine-beer,permitted,informal,completely,low,quiet,f,open,none
+132594,Nan,Nan,no_alcohol_served,not permitted,informal,completely,low,familiar,f,open,none
+134986,cuernavaca,morelos,wine-beer,not permitted,formal,no_accessibility,high,familiar,f,closed,none
+135062,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132766,cuernavaca,morelos,wine-beer,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135088,cuernavaca,morelos,no_alcohol_served,not permitted,informal,no_accessibility,low,quiet,f,closed,none
+135058,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,t,closed,none
+132754,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,partially,medium,familiar,f,closed,none
+132584,Nan,Nan,no_alcohol_served,not permitted,informal,completely,medium,familiar,t,closed,none
+135032,san luis potosi,san luis potosi,wine-beer,permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135028,san luis potosi,san luis potosi,wine-beer,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135085,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+132663,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132626,ciudad victoria,tamaulipas,no_alcohol_served,not permitted,informal,completely,medium,familiar,t,closed,none
+132583,cuernavaca,morelos,no_alcohol_served,not permitted,informal,partially,low,familiar,t,closed,none
+132866,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,completely,medium,familiar,f,closed,none
+135072,san luis potosi,san luis potosi,no_alcohol_served,not permitted,informal,no_accessibility,medium,familiar,f,closed,none
+135109,Nan,Nan,wine-beer,not permitted,informal,no_accessibility,medium,quiet,f,closed,internet
+135019,jiutepec,morelos,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
+132877,Nan,Nan,no_alcohol_served,not permitted,informal,completely,low,familiar,f,closed,none
