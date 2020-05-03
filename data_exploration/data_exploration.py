@@ -5,7 +5,7 @@
 
 
 # In this notebook I am going to play with input data, compare general statistics about it and see what can be potentially used 
-#to find more relevant features which impact rating of restaurants
+#to find more relevant features which impact rating of restaurants.
 
 import pandas as pd
 import numpy as np
@@ -15,15 +15,15 @@ from utils.utils_for_files_storing_and_reading import write_df_to_csv
 from utils.functions_for_encoding import drop_columns
 
 
-# In[ ]:
+# In[2]:
 
 
 # Initially, the downloaded data has different types of delimiters. All data sets were saved in the correct format in the folder
-# clean_data. If the data is already in that folder, some steps can be skippes. Start to run code in 6 and 8 boxes to get the
-# data of restaurants and users.
+# clean_data. If the data is already in that folder, some steps can be skipped. In this case, start to run code in 6 and 8 boxes
+# to get the data of restaurants and users.
 
 
-# In[2]:
+# In[3]:
 
 
 # loading restaurants data
@@ -35,7 +35,7 @@ restaurant_geo_places = pd.read_csv('raw_data/geoplaces.csv', delimiter =';', en
 ratings = pd.read_csv('raw_data/rating_final.csv', delimiter =';')
 
 
-# In[34]:
+# In[4]:
 
 
 # Loading users data
@@ -45,15 +45,15 @@ user_cuisine_types = pd.read_csv('raw_data/usercuisine.csv', delimiter =';')
 user_profiles = pd.read_csv('raw_data/userprofile.csv', delimiter =';')
 
 
-# In[3]:
+# In[5]:
 
 
-# I created new directory with clean .csv files that have unified formatting as input data have different delimiters
+# I created a new directory with clean .csv files that have unified formatting as input data have different delimiters.
 write_df_to_csv('clean_data', 'restaurant_payment_types.csv', restaurant_payment_types)
 write_df_to_csv('clean_data', 'restaurant_cuisine_types.csv', restaurant_cuisine_types)
 
-# as restaurant_working_hours data set has mixed types of delimiters, I rewrite its columns 'hours' and 'days' to be consistent
-#in formatting with the rest of data sets
+# As restaurant_working_hours data set has mixed types of delimiters, I rewrite its columns 'hours' and 'days' to be consistent
+# in formatting with the rest of data sets.
 
 for i, series in restaurant_working_hours.iterrows():
     hours = restaurant_working_hours.loc[i, 'hours'][0:len(restaurant_working_hours.loc[i, 'hours']) - 1]
@@ -67,10 +67,10 @@ write_df_to_csv('clean_data', 'restaurant_geo_places.csv', restaurant_geo_places
 write_df_to_csv('clean_data', 'restaurant_ratings.csv', ratings)
 
 
-# In[39]:
+# In[6]:
 
 
-#All restaurant related data in the correct format will be used for the further analysis.
+# All restaurant related data in the correct format will be used for the further analysis.
 r_payment = pd.read_csv('clean_data/restaurant_payment_types.csv')
 r_cuisine = pd.read_csv('clean_data/restaurant_cuisine_types.csv')
 r_hours = pd.read_csv('clean_data/restaurant_working_hours.csv')
@@ -79,7 +79,7 @@ r_general = pd.read_csv('clean_data/restaurant_geo_places.csv')
 ratings = pd.read_csv('clean_data/restaurant_ratings.csv')
 
 
-# In[41]:
+# In[7]:
 
 
 # Here I also save clean user data frames with default delimiter=','. 
@@ -88,7 +88,7 @@ write_df_to_csv('clean_data', 'user_cuisine_types.csv', user_cuisine_types)
 write_df_to_csv('clean_data', 'user_profiles.csv', user_profiles)
 
 
-# In[44]:
+# In[8]:
 
 
 # All user related data in the correct format will be used for the further analysis.
@@ -97,32 +97,32 @@ u_cuisine = pd.read_csv('clean_data/user_cuisine_types.csv')
 u_profiles = pd.read_csv('clean_data/user_profiles.csv')
 
 
-# In[46]:
+# In[9]:
 
 
-#Some rows in the data have the same value but written in a different format, e.g. 'VISA' vs 'Visa'. 
+# Some rows in the data have the same value but written in a different format, e.g. 'VISA' vs 'Visa'. 
 r_payment['Rpayment'].unique()
 
 
-# In[47]:
+# In[10]:
 
 
-#I will use the below functions to correct the data.
+# I use the below function to correct the data.
 def lowercase(df, *columns):
     for column in columns:
         df[column] = df[column].str.lower()
 
 
-# In[48]:
+# In[11]:
 
 
 # The cuisine data
-# There are no duplictes or some values which can be merged so I leave it like it is.
+# There are no duplicates or some values which can be merged so I leave it like it is.
 lowercase(r_cuisine, 'Rcuisine')
 sorted(r_cuisine['Rcuisine'].unique())
 
 
-# In[49]:
+# In[12]:
 
 
 # Extracting how many cuisine types exist in restaurants
@@ -130,12 +130,12 @@ print(f"Number of unique restaurants with cuisine type specified:{len(r_cuisine[
 print(f"Number of cuisine types:{len(r_cuisine['Rcuisine'].unique())}")
 
 
-# In[50]:
+# In[13]:
 
 
-#The barplot for cuisine. 
-# As there are 59 different types of cuisine, I will display top 10 by frequency. The survey was conducted in Mexico, so no
-#surprise the most frequent cuisine is Mexican.
+# The barplot for cuisines
+# As there are 59 different types of cuisine, I display top 10 by frequency. The survey was conducted in Mexico, so no
+# surprise the most frequent cuisine is Mexican.
 
 cuisine_count = r_cuisine['Rcuisine'].value_counts()
 plt.figure(figsize=(16, 6))
@@ -147,21 +147,22 @@ plt.xlabel('Cuisine', fontsize=14)
 plt.show()
 
 
-# In[51]:
+# In[14]:
 
 
-#The parking data
-#There are no duplictes or some values which can be merged so I leave it like it is.
+# The parking data
+# There are no duplicates or some values which can be merged so I leave it like it is.
 lowercase(r_parking, 'parking_lot')
 sorted(r_parking['parking_lot'].unique())
 
 
-# In[52]:
+# In[15]:
 
 
-#The barplot for parking
-# Almost 350 restaurant do not have a parking option. I will check whether the parking plays a signigicant role for a rating. If
-#so, a restaurant might include it in their services to increase its rating.
+# The barplot for parking
+# Almost 350 restaurant do not have a parking option. I'll check whether the parking plays a significant role for a rating. If
+# so, a restaurant might include it in their services to increase its rating.
+
 parking_count = r_parking['parking_lot'].value_counts()
 plt.figure(figsize=(16, 6))
 sns.set(style="darkgrid")
@@ -172,26 +173,26 @@ plt.xlabel('Parking', fontsize=14)
 plt.show()
 
 
-# In[53]:
+# In[16]:
 
 
-#The payment data
-#'Visa' was changed to 'visa/ There are no more duplictes or some values which can be merged so I leave it like it is.
+# The payment data
+# 'Visa' was changed to 'visa. There are no more duplicates or some values to be changed.
 lowercase(r_payment, 'Rpayment')
 sorted(r_payment['Rpayment'].unique())
 
 
-# In[54]:
+# In[17]:
 
 
-# As there are many options to pay in restaurants, firstly, I will check what options are the most frequent. 
+# As there are many options to pay in restaurants, firstly, I check what options are the most frequent. 
 r_payment['Rpayment'].value_counts()
 
 
-# In[55]:
+# In[18]:
 
 
-#The bar plot for payment
+# The bar plot for payment
 payment_count = r_payment['Rpayment'].value_counts()
 plt.figure(figsize=(16, 6))
 sns.set(style="darkgrid")
@@ -202,31 +203,32 @@ plt.xlabel('Payment', fontsize=14)
 plt.show()
 
 
-# In[56]:
+# In[19]:
 
 
-#The working schedule data
+# The working schedule data
 lowercase(r_hours, 'days')
 r_hours['hours'].value_counts()
 
 
-# In[57]:
+# In[20]:
 
 
-#There are 273 different shifts over three type of working days. Many working hours are intersected with each other. As there 
-#are many different options of working hours of restaurants, it's been decided not to consider this variable. If a client 
-#evaluated a restaurant, it assumes he attended it and the working shift is not an issue for the client. Moreover,the data does
-#not state what hours are more profitable for a restaurant and it's not clear how it can be evaluated. 
+# There are 273 different shifts over three types of working days. Many working hours are intersected with each other. As there 
+# are many different options of working hours of restaurants, it's been decided not to consider this variable. If a client 
+# evaluated a restaurant, it assumes he attended it and the working shift is not an issue for the client. Moreover,the data does
+# not state what hours are more profitable for a restaurant and it's not clear how it can be evaluated. 
 
 pd.pivot_table(r_hours, values = ['hours'], index = 'hours', columns = 'days',aggfunc = 'count')
 
 
-# In[58]:
+# In[21]:
 
 
-#The general data
-#Some columns in the r_general will be removed. Those columns, in my opinion, will not affect the 
-#rating and/or the visualization of those columns is irrelevant and does not shed a light on the data.
+# The general data
+# Some columns in the r_general will be removed. Those columns, in my opinion, will not affect the rating and/or the
+# visualization of those columns is irrelevant and does not shed a light on the data.
+
 r_general = drop_columns(r_general, 'latitude', 'longitude', 'the_geom_meter', 'address',
              'fax','zip','url', 'name')
 lowercase(r_general, 'city', 'state', 'country', 'alcohol', 'smoking_area', 
@@ -234,28 +236,30 @@ lowercase(r_general, 'city', 'state', 'country', 'alcohol', 'smoking_area',
           'other_services')
 
 
-# In[59]:
+# In[22]:
 
 
-# I will check the remaining columns and decide how to deal with them. I will start from country.
+# Checking the remaining columns
+# I will start from country.
+
 r_general['country'].value_counts()
 
 
-# In[60]:
+# In[23]:
 
 
-# Mexico is a country for the mojrity of restaurants. Some restaurants with a missing country still have state and/or city 
-# indicatiting it's still Mexico. A few records have neither country nor state nor city. Nevertheless, it does notmater as the
+# Mexico is a country for the majority of restaurants. Some restaurants with a missing country still have state and/or city 
+# indicatiting it's still Mexico. A few records have neither country nor state nor city. Nevertheless, doesn't matter as the
 # survey was conducted for Mexican restaurants. As this value is the same for all places, the column 'country' will be dropped 
 # from the dataset.
 r_general = drop_columns(r_general,'country')
 
 
-# In[61]:
+# In[24]:
 
 
 # When checking state, some values caught my attention. It's slp, san luis potosi, s.l.p., san luis potos. They all refer to one
-# state San Luis Potose. I decided to replcase all those values by 'san luis potosi'. '?' were replaced by 'Nan'
+# state San Luis Potose. I decided to replace all those values by 'san luis potosi'. '?' were replaced by 'Nan'
 
 print(r_general['state'].value_counts())
 
@@ -265,11 +269,11 @@ r_general['state'] = r_general['state'].replace('?', 'Nan')
 print(f"\n{r_general['state'].value_counts()}")
 
 
-# In[62]:
+# In[25]:
 
 
 # Some city values can be merged like it was done for the 'state'. '?' were replaced by 'Nan'. You can see how the column 'city'
-# chnaged after the replacement.
+# changed after the replacement.
 
 print(r_general['city'].value_counts())
 
@@ -281,32 +285,32 @@ r_general['city'] = r_general['city'].replace('?', 'Nan')
 print(f"\n{r_general['city'].value_counts()}")
 
 
-# In[63]:
+# In[26]:
 
 
 # The column 'alcohol' won't be changed.  
 r_general['alcohol'].value_counts()
 
 
-# In[64]:
+# In[27]:
 
 
 # The column 'smoking_area'
 # I checked what options are in the smoking_area column. I deciced to have two categories:
-# 1)not permitted (none, not permitted) and 2) permitted(only at bar, section, permitted)
+# 1) not permitted (none, not permitted) and 2) permitted (only at bar, section, permitted)
 print(r_general['smoking_area'].value_counts())
 r_general['smoking_area'] = r_general['smoking_area'].replace(['none'],'not permitted')
 r_general['smoking_area'] = r_general['smoking_area'].replace(['only at bar', 'section'],'permitted')
 print(f"\n{r_general['smoking_area'].value_counts()}")
       
-# I assume smoking_area and alcolhol will play a siginifican role for a rating. This can be a decisive factor when choosing and 
+# I assume smoking_area and alcohol will play a significant role for a rating. This can be a decisive factor when choosing and 
 # evaluating a restaurant, especially for smokers and/or people who refuse to go to a restaurant if they don’t serve alcohol.
 # It's good there are different options for those two variables. The majority of restaurants do not serve alcohol and do not
 # permit smoking. It is interesting to check whether the lack of the options decreases the rating of a restaurant or 
 # clients do not consider them as important factors.
 
 
-# In[65]:
+# In[28]:
 
 
 # The column 'dress_code'
@@ -316,14 +320,15 @@ print(r_general['dress_code'].value_counts())
 r_general['dress_code'] = r_general['dress_code'].replace(['casual'],'informal')
 print(f"\n{r_general['dress_code'].value_counts()}")
       
-# There are only 2 restaurants with formal clothes. I might drop this column for the further analysis as there is no sense to 
-# have this variable when it's the same for 128 restaurant.
+# There are only 2 restaurants with formal clothes. I assume it will not affect the rating of a restaurant if almost all of them
+# have the same value per one category.
 
 
-# In[66]:
+# In[29]:
 
 
-#The values of rest columns from r_general. After checking the values, I decided not to change them.
+# The values of rest columns from r_general. After checking the values, I decided not to change them.
+
 print(f"\nThe options of accessibility are: \n{r_general['accessibility'].value_counts()}")
 print(f"\nThe options of price are: \n{r_general['price'].value_counts()}")
 print(f"\nThe options of Rambience are: \n{r_general['Rambience'].value_counts()}")
@@ -332,7 +337,7 @@ print(f"\nThe options of area are: \n{r_general['area'].value_counts()}")
 print(f"\nThe options of other_services are: \n{r_general['other_services'].value_counts()}")
 
 
-# In[67]:
+# In[30]:
 
 
 # Barplots for r_general. 
@@ -349,22 +354,23 @@ def plot_general(column):
     plt.show()  
 
 
-# In[68]:
+# In[31]:
 
 
 plot_general('alcohol')
 plot_general('smoking_area')
 plot_general('price')
 
-# if needed, it's possible to make a bar plot for any variable. I checked three of them.
+# If needed, it's possible to make a bar plot for any variable. I checked three of them.
 
 
-# In[69]:
+# In[32]:
 
 
 # Rating dataset
 # I decided to check the correlation between different rating from ratings dataset. I created a new dataframe to see the average
 # rating of each rating grouped by placeID. I got a table of 130 restaurants with their ratings.
+
 rating_mean = ratings.groupby('placeID')['rating', 'food_rating', 'service_rating'].mean().reset_index()
 print(rating_mean)
 
@@ -379,10 +385,10 @@ print(f'\nThe rating correlation: \n{correlation}')
 # I assume rating and service_rating will be affected by the same variables.
 
 
-# In[70]:
+# In[33]:
 
 
-#I saved the clean data sets + rating dataset (to have all sets in one folder) to csv files which will be used later.
+# I saved the clean data sets + rating dataset (to have all sets in one folder) to csv files which will be used later.
 write_df_to_csv('from_data_visualization', 'restaurant_cuisine.csv', r_cuisine)
 write_df_to_csv('from_data_visualization', 'restaurant_general.csv', r_general)
 write_df_to_csv('from_data_visualization', 'restaurant_hours.csv', r_hours)
@@ -392,7 +398,7 @@ write_df_to_csv('from_data_visualization', 'ratings.csv', ratings)
 write_df_to_csv('from_data_visualization', 'rating_mean.csv', rating_mean)
 
 
-# In[30]:
+# In[34]:
 
 
 # Here I want to merge data of restaurants from different data sets by placeID with ratings and see how different features 
@@ -401,7 +407,8 @@ write_df_to_csv('from_data_visualization', 'rating_mean.csv', rating_mean)
 
 # I will merge the rating dataset with other frames and then display the data on bar charts. I want to see how rating is
 # different depending on column values. For this, I am creating the list of rating which will be used for bar charts +
-# addiitonal fixed arguments used for all plots.
+# additional fixed arguments used for all plots.
+
 subjects = ['rating', 'food_rating', 'service_rating']
 indx = np.arange(len(subjects))
 bar_width = 0.25
@@ -420,7 +427,7 @@ def autolabel(rects):
                     ha='center', va='bottom')
 
 
-# In[71]:
+# In[35]:
 
 
 # Parking and Rating data sets
@@ -428,7 +435,7 @@ parking_rating = pd.merge(rating_mean,r_parking,on = 'placeID', how = 'left')
 df_bar_plot = parking_rating.groupby('parking_lot')[subjects].mean().T
 
 
-# In[32]:
+# In[36]:
 
 
 # Parking and Rating plot
@@ -453,10 +460,11 @@ autolabel(rects4)
 plt.show()
 
 
-# In[36]:
+# In[37]:
 
 
-# I already know there are 130 restaurants which were evaluated by users. I want to know the number of users who gave the rating.
+# I already know there are 130 restaurants which were evaluated by users. I want to know the number of users who gave the rating
+# and who have the user details.
 
 def find_unique_records_number_by_column(column, *data_frames):
     data_frames_columns = [df[column] for df in data_frames]
@@ -473,40 +481,42 @@ all_users_ids = find_unique_records_number_by_column(
 print(f"The number of users: {len(all_users_ids)}")
 
 
-# In[77]:
+# In[38]:
 
 
-# There are 138 users I have the data about. Not all of them might evaluate restaurants. Firstly, I will clean the uder data like ti was done for
-# the restaurant data. 
+# There are 138 users I have the data about. Not all of them might evaluate restaurants. Firstly, I will clean the uder data like
+# it was done for the restaurant data. 
 
-#The user_profile data
+# The user_profile data
+
 u_profiles.head()
 
 
-# In[81]:
+# In[39]:
 
 
-# drop redundant columns from u_profiles
+# Drop redundant columns from u_profiles
 u_profiles = drop_columns(u_profiles, 'latitude', 'longitude', 'birth_year', 'color', 'weight', 'height')
 
 
-# In[82]:
+# In[40]:
 
 
 u_profiles.head()
 
 
-# In[84]:
+# In[41]:
 
 
 lowercase(u_profiles, 'smoker', 'drink_level', 'dress_preference', 'ambience', 'transport', 'marital_status', 'hijos', 
           'interest', 'personality', 'religion', 'activity', 'budget')
 
 
-# In[95]:
+# In[42]:
 
 
 # I am going to check values in each column and check if some values can be combined or need to be replaced. 
+
 print(f"\n{u_profiles['smoker'].value_counts()}")
 print(f"\n{u_profiles['drink_level'].value_counts()}")
 print(f"\n{u_profiles['dress_preference'].value_counts()}")
@@ -521,10 +531,11 @@ print(f"\n{u_profiles['activity'].value_counts()}")
 print(f"\n{u_profiles['budget'].value_counts()}")
 
 
-# In[98]:
+# In[43]:
 
 
 # After analyzyng the above result, I decided to replace some values to reduce the number of options.
+
 u_profiles['dress_preference'] = u_profiles['dress_preference'].replace(['formal','elegant'], 'formal')
 u_profiles['transport'] = u_profiles['transport'].replace(['public','on foot'], 'not car owner')
 u_profiles['marital_status'] = u_profiles['marital_status'].replace(['single','widow'], 'not married')
@@ -532,49 +543,54 @@ u_profiles['hijos'] = u_profiles['hijos'].replace(['kids','dependent'], 'with ki
 u_profiles['hijos'] = u_profiles['hijos'].replace(['independent'], 'without kids')
 
 
-# In[100]:
+# In[44]:
 
 
 # Payment User data
+
 lowercase(u_payment, 'Upayment')
 print(f"\n{u_payment['Upayment'].value_counts()}")
 
 
-# In[101]:
+# In[45]:
 
 
 # Cuisine User data
+
 lowercase(u_cuisine, 'Rcuisine')
 sorted(u_cuisine['Rcuisine'].unique())
 
 
-# In[102]:
+# In[46]:
 
 
-# Some values are ambigious and it's unclear how they can affect the rating. However, there might be a storng correlation between
-# some restaurants and users feaures, e.g. smoking_area of a restaurant and smoker of a user. I will check how those features
+# Some values are ambiguous and it's unclear how they can affect the rating. However, there might be a strong correlation between
+# some restaurants and users features, e.g. smoking_area of a restaurant and smoker of a user. I will check how those features
 # are dependent on each other. 
 
 
-# In[121]:
+# In[47]:
 
 
 # Merging rating and smoking details of restaurants and users
+
 smoking_df = pd.merge(pd.merge(ratings,  r_general[['placeID', 'smoking_area']], on = 'placeID', how = 'left'),
                       u_profiles[['userID', 'smoker']], on = 'userID', how = 'left')
 
 
-# In[122]:
+# In[48]:
 
 
 # Mean rating grouped by users, smoker, and smoking_area
+
 smoking_rating_mean = smoking_df.groupby(['userID', 'smoker', 'smoking_area'])['rating', 'service_rating'].mean().reset_index()
 
 
-# In[123]:
+# In[49]:
 
 
 # How many smokers and non-smokers among users
+
 counts = smoking_rating_mean.groupby('smoker')['userID'].nunique()
 labels = ['N/A', 'Non-smoker', 'Smoker']
 fig1, ax1 = plt.subplots(figsize = (16,7))
@@ -585,35 +601,40 @@ ax1.axis('equal')
 plt.show()
 
 
-# In[124]:
+# In[50]:
 
 
 smoking_stats = pd.pivot_table(smoking_rating_mean, values = ['rating', 'service_rating'], index = 'smoking_area', 
                columns = 'smoker',aggfunc = 'mean')
 
 print(smoking_stats )
-# I am doing this as there were only one variable, i.e. smoking area, affecting the rating. It's for simplicity only and to check
-# how smoking_area affects users' rating. For this variabe, I consider rating and service rating although they are highly correlated.
+
+# I am doing this as there were only one variable, i.e. smoking area, affecting the rating. It's for simplicity only and to
+# check how smoking_area affects users' rating. For this variable, I consider rating and service rating although they are highly
+# correlated. 
 # As per below table, I assume smoking_area might have an impact on the rating but along with other variables.
 # Only after the model implementation I can state whether there is an evidence this variable affects the result or not.
 
 
-# In[125]:
+# In[51]:
 
 
 # Merging rating and drinking details of restaurants and users
+
 drinking_df  = pd.merge(pd.merge(ratings,  r_general[['placeID', 'alcohol']], on = 'placeID', how = 'left'),
                       u_profiles[['userID', 'drink_level']], on = 'userID', how = 'left')
 
 # Mean rating grouped by users, alcohol, and drink_level
+
 drinking_rating_mean = drinking_df.groupby(['userID', 'alcohol', 'drink_level'])['rating', 'food_rating',
                                                                                  'service_rating'].mean().reset_index()
 
 
-# In[126]:
+# In[52]:
 
 
 # Drink_level stats
+
 counts = drinking_rating_mean.groupby('drink_level')['userID'].nunique()
 labels = ['abstemious', 'casual drinker', 'social drinker']
 fig1, ax1 = plt.subplots(figsize = (16,7))
@@ -624,7 +645,7 @@ ax1.axis('equal')
 plt.show()
 
 
-# In[127]:
+# In[53]:
 
 
 drinking_stats = pd.pivot_table(drinking_rating_mean, values = ['rating', 'food_rating','service_rating'], index = 'alcohol', 
@@ -633,21 +654,23 @@ drinking_stats = pd.pivot_table(drinking_rating_mean, values = ['rating', 'food_
 print(drinking_stats)
 
 
-# In[128]:
+# In[54]:
 
 
 # How budget and price affect the rating
 # Merging rating and budget/price details of restaurants and users
+
 budget_df  = pd.merge(pd.merge(ratings,  r_general[['placeID', 'price']], on = 'placeID', how = 'left'),
                       u_profiles[['userID', 'budget']], on = 'userID', how = 'left')
 budget_rating_mean = budget_df.groupby(['userID', 'price', 'budget'])['rating', 'food_rating',
                                           'service_rating'].mean().reset_index()
 
 
-# In[129]:
+# In[55]:
 
 
 # Budget stats
+
 counts = budget_rating_mean.groupby('budget')['userID'].nunique()
 labels = ['N/A', 'high', 'low', 'medium']
 fig1, ax1 = plt.subplots(figsize = (16,7))
@@ -658,17 +681,18 @@ ax1.axis('equal')
 plt.show()
 
 
-# In[130]:
+# In[56]:
 
 
 budget_stats = pd.pivot_table(budget_rating_mean, values = ['rating', 'food_rating','service_rating'], index = 'price', 
                columns = 'budget',aggfunc = 'mean')
 
 print(budget_stats)
-# As expected the lowest rating is for low pice restaurants, especially for service_raiting among users of all budget types.
+
+# As expected the lowest rating is for low price restaurants, especially for service_raiting among users of all budget types.
 
 
-# In[132]:
+# In[57]:
 
 
 # There are too many variations that can be checked, including > 2 variables from both restaurants and users data. It can be done
@@ -683,7 +707,7 @@ print(budget_stats)
 # code, whereas the rest is for informal - I suppose formal clothes is accepted as well. According to the users' profiles 32.6%
 # people prefer elegant or formal clothes, which I merge into one group 'not casual'. If there were more restaurants with formal
 # dress code, it could be analyzed whether such restaurants receive higher rating as it is considered a higher level in comparison
-# to others. To make such a business decision, it's relaly needed to know the industry and how it works, but the data can help
+# to others. To make such a business decision, it's really needed to know the industry and how it works, but the data can help
 # with this. 
 
 user_clothes_df = u_profiles[['userID', 'dress_preference']]
@@ -697,15 +721,15 @@ ax1.axis('equal')
 plt.show()
 
 
-# In[134]:
+# In[58]:
 
 
 # The above example is more when business and statistics should work together to make a decision. As I am not aware of nuances of
-# this industry, I cannot state wtether it will be a good decision or not. I may assume it's not only one variable which should
+# this industry, I cannot state whether it will be a good decision or not. I may assume it's not only one variable which should
 # be considered.
 
-#Lastly, I will check the average rating per four different categories (franchise, area, rambience, other_services) from 
-# r_general as those catehories were selected as features which affect most the rating of restaurants. Its selection
+# Lastly, I checked the average rating per four different categories (franchise, area, rambience, other_services) from 
+# r_general as those categories were selected as features which affect most the rating of restaurants. Its selection
 # will be explained in details in the section 'methodology'.
 
 subjects = ['rating', 'food_rating', 'service_rating']
@@ -713,7 +737,7 @@ indx = np.arange(len(subjects))
 bar_width = 0.35
 
 
-# In[141]:
+# In[59]:
 
 
 # Franchise Rating
@@ -737,11 +761,12 @@ autolabel(rects2)
 plt.show()
 
 
-# In[142]:
+# In[60]:
 
 
 # Area Rating
-# There is a siginificant difference between close and open area for general and service ratings.
+# There is a significant difference between close and open area for general and service ratings.
+
 area_rating = pd.merge(ratings,  r_general[['placeID', 'area']], on = 'placeID', how = 'left')
 area_rating_mean = area_rating.groupby(['area'])['rating', 'food_rating', 'service_rating'].mean().T
 
@@ -760,7 +785,7 @@ autolabel(rects2)
 plt.show()
 
 
-# In[144]:
+# In[61]:
 
 
 # Rambience Rating
@@ -783,12 +808,12 @@ autolabel(rects2)
 plt.show()
 
 
-# In[145]:
+# In[62]:
 
 
 # Other_services Rating
 # Restaurants without any additional services provided have the lowest rating in all ratings and the difference is really 
-#significant.
+# significant.
 
 other_services_rating = pd.merge(ratings,  r_general[['placeID', 'other_services']], on = 'placeID', how = 'left')
 other_services_rating_mean = other_services_rating.groupby(['other_services'])['rating', 'food_rating', 
@@ -811,7 +836,7 @@ autolabel(rects3)
 plt.show()
 
 
-# In[ ]:
+# In[63]:
 
 
 # This section helps to understand the data easier rather than checking all rows in different dataset. It's easier to combine
@@ -819,4 +844,10 @@ plt.show()
 
 # The next section 'Modelling' is to build models to predict how restaurants will be evaluated by people basing on restaurants 
 # features.
+
+
+# In[ ]:
+
+
+
 
